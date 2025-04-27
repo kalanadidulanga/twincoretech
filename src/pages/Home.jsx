@@ -9,6 +9,9 @@ const Home = () => {
   useEffect(() => {
     // Update page title
     document.title = "TwinCoreTech | Digital Transformation Specialists";
+
+    //i want scroll to top when page loads
+    window.scrollTo(0, 0);
   }, []);
 
   return (

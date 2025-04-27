@@ -7,6 +7,7 @@ const Products = () => {
   useEffect(() => {
     // Update page title
     document.title = "Products | TwinCoreTech";
+    window.scrollTo(0, 0);
   }, []);
 
   // References for animations and scroll effects

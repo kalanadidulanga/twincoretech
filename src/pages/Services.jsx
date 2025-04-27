@@ -7,6 +7,7 @@ const Services = () => {
   useEffect(() => {
     // Update page title
     document.title = "Services | TwinCoreTech";
+    window.scrollTo(0, 0);
   }, []);
 
   return (
