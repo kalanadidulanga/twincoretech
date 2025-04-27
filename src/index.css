@@ -1,46 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  /* Primary color - Deep teal that conveys trust, professionalism and stability */
-  --color-primary-50: oklch(0.97 0.02 189.63);
-  --color-primary-100: oklch(0.94 0.04 189.63);
-  --color-primary-200: oklch(0.89 0.08 189.63);
-  --color-primary-300: oklch(0.83 0.12 189.63);
-  --color-primary-400: oklch(0.76 0.16 189.63);
-  --color-primary-500: oklch(0.7 0.2 189.63); /* Base primary */
-  --color-primary-600: oklch(0.63 0.19 189.63);
-  --color-primary-700: oklch(0.56 0.18 189.63);
-  --color-primary-800: oklch(0.49 0.17 189.63);
-  --color-primary-900: oklch(0.42 0.16 189.63);
-  --color-primary-950: oklch(0.35 0.15 189.63);
+  /* Primary color - Modern electric blue to deep indigo spectrum */
+  --color-primary-50: oklch(0.97 0.02 255);
+  --color-primary-100: oklch(0.94 0.04 255);
+  --color-primary-200: oklch(0.9 0.08 255);
+  --color-primary-300: oklch(0.84 0.14 255);
+  --color-primary-400: oklch(0.78 0.18 255);
+  --color-primary-500: oklch(0.71 0.22 255); /* Base primary */
+  --color-primary-600: oklch(0.64 0.21 255);
+  --color-primary-700: oklch(0.57 0.2 255);
+  --color-primary-800: oklch(0.5 0.18 255);
+  --color-primary-900: oklch(0.4 0.17 255);
+  --color-primary-950: oklch(0.3 0.16 255);
 
-  /* Accent color - Deep violet for innovation and creativity */
-  --color-accent-50: oklch(0.97 0.02 283.45);
-  --color-accent-100: oklch(0.94 0.04 283.45);
-  --color-accent-200: oklch(0.89 0.08 283.45);
-  --color-accent-300: oklch(0.83 0.12 283.45);
-  --color-accent-400: oklch(0.76 0.16 283.45);
-  --color-accent-500: oklch(0.69 0.2 283.45); /* Base accent */
-  --color-accent-600: oklch(0.62 0.19 283.45);
-  --color-accent-700: oklch(0.55 0.18 283.45);
-  --color-accent-800: oklch(0.48 0.17 283.45);
-  --color-accent-900: oklch(0.41 0.16 283.45);
-  --color-accent-950: oklch(0.34 0.15 283.45);
+  /* Accent color - Modern teal to cyan */
+  --color-accent-50: oklch(0.97 0.02 200);
+  --color-accent-100: oklch(0.94 0.04 200);
+  --color-accent-200: oklch(0.88 0.09 200);
+  --color-accent-300: oklch(0.82 0.15 200);
+  --color-accent-400: oklch(0.76 0.2 200);
+  --color-accent-500: oklch(0.7 0.24 200); /* Base accent */
+  --color-accent-600: oklch(0.62 0.22 200);
+  --color-accent-700: oklch(0.54 0.2 200);
+  --color-accent-800: oklch(0.46 0.18 200);
+  --color-accent-900: oklch(0.38 0.16 200);
+  --color-accent-950: oklch(0.3 0.14 200);
 
-  /* Secondary color - Amber for warmth and optimism */
-  --color-secondary-50: oklch(0.97 0.03 75.34);
-  --color-secondary-100: oklch(0.94 0.06 75.34);
-  --color-secondary-200: oklch(0.9 0.1 75.34);
-  --color-secondary-300: oklch(0.85 0.14 75.34);
-  --color-secondary-400: oklch(0.8 0.18 75.34);
-  --color-secondary-500: oklch(0.75 0.22 75.34); /* Base secondary */
-  --color-secondary-600: oklch(0.68 0.21 75.34);
-  --color-secondary-700: oklch(0.61 0.2 75.34);
-  --color-secondary-800: oklch(0.54 0.19 75.34);
-  --color-secondary-900: oklch(0.47 0.18 75.34);
-  --color-secondary-950: oklch(0.4 0.17 75.34);
+  /* Secondary color - Rich gradient-friendly violet to magenta */
+  --color-secondary-50: oklch(0.97 0.03 290);
+  --color-secondary-100: oklch(0.94 0.06 290);
+  --color-secondary-200: oklch(0.9 0.1 290);
+  --color-secondary-300: oklch(0.85 0.16 290);
+  --color-secondary-400: oklch(0.79 0.21 290);
+  --color-secondary-500: oklch(0.73 0.26 290); /* Base secondary */
+  --color-secondary-600: oklch(0.65 0.24 290);
+  --color-secondary-700: oklch(0.57 0.22 290);
+  --color-secondary-800: oklch(0.49 0.2 290);
+  --color-secondary-900: oklch(0.41 0.18 290);
+  --color-secondary-950: oklch(0.33 0.16 290);
 
-  /* Neutral colors - Slate with subtle blue undertones for professional look */
+  /* Neutral colors - Cool elegant gray with slight blue undertone */
   --color-neutral-50: oklch(0.98 0.01 240);
   --color-neutral-100: oklch(0.95 0.02 240);
   --color-neutral-200: oklch(0.9 0.03 240);
@@ -54,9 +54,9 @@
   --color-neutral-950: oklch(0.15 0.01 240);
 
   /* Error/danger/success colors for actionable items */
-  --color-success: oklch(0.75 0.18 150);
-  --color-error: oklch(0.68 0.25 25);
-  --color-warning: oklch(0.8 0.18 75);
+  --color-success: oklch(0.75 0.2 150);
+  --color-error: oklch(0.7 0.25 15);
+  --color-warning: oklch(0.8 0.18 80);
 
   /* Font configuration */
   --font-family-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -71,41 +71,93 @@
   --radius-2xl: 1.5rem;
   --radius-3xl: 2rem;
 
-  /* Shadows */
+  /* Enhanced shadows for depth */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-highlight: 0 0 20px rgba(var(--color-primary-500), 0.6);
+  --shadow-glow: 0 0 30px rgba(var(--color-primary-400), 0.4);
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md px-4 py-2 shadow-sm transition-all duration-200;
+    @apply bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-medium rounded-md px-5 py-2.5 shadow-md shadow-primary-900/20 hover:shadow-lg hover:shadow-primary-900/30 transition-all duration-300;
   }
 
   .btn-secondary {
-    @apply bg-secondary-600 hover:bg-secondary-700 text-white font-medium rounded-md px-4 py-2 shadow-sm transition-all duration-200;
+    @apply bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-600 hover:to-secondary-700 text-white font-medium rounded-md px-5 py-2.5 shadow-md shadow-secondary-900/20 hover:shadow-lg hover:shadow-secondary-900/30 transition-all duration-300;
   }
 
   .btn-outline {
-    @apply border border-primary-600 text-primary-600 hover:bg-primary-50 font-medium rounded-md px-4 py-2 transition-all duration-200;
+    @apply border border-primary-500 text-primary-600 hover:bg-primary-50/20 font-medium rounded-md px-5 py-2.5 transition-all duration-300 shadow-sm hover:shadow-primary-500/10;
   }
 
   .card {
-    @apply bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6;
+    @apply bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-lg shadow-md border border-neutral-100/80 dark:border-neutral-700/80 p-6 hover:shadow-lg transition-all duration-300;
   }
 
   .section-title {
-    @apply text-3xl font-bold text-neutral-900 dark:text-white mb-6;
+    @apply text-3xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent mb-6;
   }
 
   .section-subtitle {
     @apply text-xl font-medium text-neutral-700 dark:text-neutral-200 mb-4;
+  }
+
+  .glass-card {
+    @apply bg-white/30 dark:bg-neutral-900/30 backdrop-blur-md rounded-xl border border-white/20 dark:border-neutral-700/20 shadow-lg;
+  }
+
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:-z-10 before:p-[1.5px] before:rounded-lg before:bg-gradient-to-r before:from-primary-500 before:to-accent-500;
   }
 }
 
 /* Base HTML setup */
 html,
 body {
-  @apply bg-neutral-50 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-100 antialiased;
+  @apply bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-950 text-neutral-800 dark:text-neutral-100 antialiased min-h-screen;
+  background-attachment: fixed;
+}
+
+/* Add subtle background pattern */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Enhance focus styles */
+:focus {
+  @apply outline-none ring-2 ring-primary-500/50 ring-offset-1;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100 dark:bg-neutral-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-300 dark:bg-primary-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-400 dark:bg-primary-500;
 }

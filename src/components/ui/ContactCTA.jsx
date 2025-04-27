@@ -1,27 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const ContactCTA = () => {
   const sectionRef = useRef(null);
   const contentRef = useRef(null);
-
-  useEffect(() => {
-    gsap.from(contentRef.current.children, {
-      y: 30,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top bottom-=100",
-        toggleActions: "play none none none",
-      },
-    });
-  }, []);
 
   return (
     <section
