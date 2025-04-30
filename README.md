@@ -1,6 +1,6 @@
 # twincoretech
 
-<!-- home-page -->
+## home-page
 
 TwinCoreTech​​
 ​​At TwinCoreTech, we provide specialist support for digital transformation, operational design, and programme delivery—helping organisations streamline processes, unlock efficiencies, and prepare for the future.
@@ -49,7 +49,7 @@ Offshore Resourcing Services​​​
 
 High-quality, cost-effective software developers and business analysts from our Sri Lanka based development centre
 
-<!-- products -->
+## products
 
 TwinCoreTech Products
 Evolving from Consultancy to Scalable Technology
@@ -95,7 +95,7 @@ Omadeas Agentic AI (Operational optimization & workflow automation)
 
 All our products are tested in-house first on our own projects and operations before release.
 
-<!-- Services -->
+## Services
 
 TwinCoreTech Services
 Our consultancy services focus on end-to-end planning and operational setup, ensuring businesses are equipped for successful digital transformation and financial efficiency.
@@ -179,7 +179,7 @@ Working with subject matter experts to build training programmes that support re
 
 Enabling knowledge transfer during live transformation and delivery programmes
 
-<!-- Team and partners -->
+## Team and partners
 
 Our Team and Specialist Partnerships
 Our current team consists of founder/principle consultant, product architect, business experts and a global network of specialist developers and industry experts in financial services and software development with combined 40+ years experience with significant experience in:
@@ -206,7 +206,7 @@ Legacy system consolidations & migrations across UK & European markets.​​
 
 TwinCoreTech is an equal opportunties employer.
 
-<!-- Investors -->
+## Investors
 
 For Investors
 Investment and Growing Our Product
@@ -234,7 +234,7 @@ Lowers the barriers to entry for small and medium enterprises and enable rapid e
 
 Strongly support diversity, equity and inclusion
 
-<!-- Contact us -->
+## Contact us
 
 Contact Us
 Clockwise Bromley.jpg
