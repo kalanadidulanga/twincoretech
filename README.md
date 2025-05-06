@@ -1,4 +1,4 @@
-# twincoretech
+# TwinCoreTech
 
 ## home-page
 
