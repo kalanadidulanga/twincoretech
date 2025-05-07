@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1001.67 376.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #39b54a;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #2e7b9d;
+        font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold';
+        font-size: 144px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-6 {
+        fill: #ff5a24;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-8 {
+        fill: #f15a24;
+      }
+
+      .cls-9 {
+        fill: #22b573;
+      }
+
+      .cls-10 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-11 {
+        fill: #f7931e;
+      }
+
+      .cls-12 {
+        fill: #73d1d3;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-6" cx="136.22" cy="162.38" r="42.52"/>
+    <circle class="cls-11" cx="260.76" cy="134.65" r="63.78"/>
+    <circle class="cls-9" cx="448.49" cy="95.67" r="95.67"/>
+    <circle class="cls-12" cx="47.22" cy="180.82" r="28.35"/>
+    <path class="cls-12" d="M75.55,225.43H18.55v-6h57v6Z"/>
+    <rect class="cls-8" x="93.7" y="216.79" width="85.04" height="8.5"/>
+    <rect class="cls-11" x="196.98" y="211.13" width="127.56" height="14.17"/>
+    <rect class="cls-1" x="353.69" y="205.46" width="191.34" height="19.84"/>
+  </g>
+  <text class="cls-3" transform="translate(0 346.33)"><tspan class="cls-4" x="0" y="0">T</tspan><tspan x="84.52" y="0">winCo</tspan><tspan class="cls-7" x="521.16" y="0">r</tspan><tspan class="cls-2" x="580.64" y="0">e</tspan><tspan class="cls-5" x="666.21" y="0">T</tspan><tspan x="747.14" y="0">e</tspan><tspan class="cls-10" x="832.71" y="0">c</tspan><tspan x="914.7" y="0">h</tspan></text>
+  <polyline class="cls-12" points="18.55 219.43 75.55 219.43 75.55 216.79"/>
+  <polyline class="cls-6" points="93.7 216.79 178.74 216.79 178.74 211.13"/>
+  <polyline class="cls-11" points="196.98 211.13 324.54 211.13 324.54 205.46"/>
+  <polyline class="cls-9" points="353.69 205.46 545.03 205.46 545.03 198.43"/>
+</svg>
