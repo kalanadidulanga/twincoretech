@@ -3,29 +3,36 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 py-16">
+    <footer className="bg-neutral-50 py-16 relative overflow-hidden">
+      {/* Colorful bottom border based on all logo colors */}
+      <div className="absolute top-0 left-0 right-0 h-1 multi-color-gradient"></div>
+      
+      {/* Decorative elements */}
+      <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent-400/5 blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-tertiary-400/5 blur-3xl"></div>
+      
       <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and brief description */}
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 via-accent-500 to-tertiary-500 bg-clip-text text-transparent">
                 TwinCoreTech
               </span>
             </Link>
-            <p className="text-neutral-400 mb-4">
+            <p className="text-neutral-600 mb-4">
               Specialist support for digital transformation, operational design,
               and programme delivery.
             </p>
             <div className="flex space-x-4">
               <a
                 href="https://linkedin.com"
-                className="text-neutral-400 hover:text-primary-500"
+                className="bg-white text-primary-500 hover:text-primary-600 p-2 rounded-full border border-primary-100 hover:border-primary-200 hover:shadow-md transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-5 w-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -34,12 +41,12 @@ const Footer = () => {
               </a>
               <a
                 href="https://twitter.com"
-                className="text-neutral-400 hover:text-primary-500"
+                className="bg-white text-accent-500 hover:text-accent-600 p-2 rounded-full border border-accent-100 hover:border-accent-200 hover:shadow-md transition-all duration-300"
                 aria-label="Twitter"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-5 w-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -51,14 +58,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">
+            <h3 className="text-lg font-bold text-neutral-800 mb-4 primary-gradient-text">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   to="/"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-primary-500 transition-colors inline-block py-1"
                 >
                   Home
                 </Link>
@@ -66,7 +73,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/products"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-accent-500 transition-colors inline-block py-1"
                 >
                   Products
                 </Link>
@@ -74,7 +81,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-tertiary-500 transition-colors inline-block py-1"
                 >
                   Services
                 </Link>
@@ -82,7 +89,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/team"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-secondary-500 transition-colors inline-block py-1"
                 >
                   Team
                 </Link>
@@ -90,7 +97,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/investors"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-gold-500 transition-colors inline-block py-1"
                 >
                   Investors
                 </Link>
@@ -100,14 +107,14 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">
+            <h3 className="text-lg font-bold text-neutral-800 mb-4 accent-gradient-text">
               Our Services
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   to="/services"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-accent-500 transition-colors inline-block py-1"
                 >
                   Digital Transformation
                 </Link>
@@ -115,7 +122,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-accent-500 transition-colors inline-block py-1"
                 >
                   Operations Consultancy
                 </Link>
@@ -123,7 +130,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-accent-500 transition-colors inline-block py-1"
                 >
                   Offshore Resourcing
                 </Link>
@@ -131,7 +138,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-neutral-400 hover:text-primary-500 transition-colors"
+                  className="text-neutral-600 hover:text-accent-500 transition-colors inline-block py-1"
                 >
                   Commercial Modelling
                 </Link>
@@ -141,10 +148,10 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">
+            <h3 className="text-lg font-bold text-neutral-800 mb-4 tertiary-gradient-text">
               Contact Us
             </h3>
-            <address className="text-neutral-400 not-italic">
+            <address className="text-neutral-600 not-italic">
               <p>TwinCoreTech Ltd</p>
               <p>Bromley Old Town Hall</p>
               <p>30 Tweedy Road</p>
@@ -153,7 +160,7 @@ const Footer = () => {
               <p className="mt-3">
                 <a
                   href="tel:+447539730098"
-                  className="text-primary-500 hover:text-primary-400"
+                  className="text-primary-500 hover:text-primary-600 hover:underline transition-colors"
                 >
                   +44 75 3973 0098
                 </a>
@@ -161,7 +168,7 @@ const Footer = () => {
               <p className="mt-1">
                 <a
                   href="mailto:sajithmudalige@twincoretech.com"
-                  className="text-primary-500 hover:text-primary-400"
+                  className="text-primary-500 hover:text-primary-600 hover:underline transition-colors"
                 >
                   sajithmudalige@twincoretech.com
                 </a>
@@ -170,22 +177,22 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-neutral-800 mt-12 pt-8">
+        <div className="border-t border-neutral-200 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-neutral-400 text-sm mb-4 sm:mb-0">
+            <p className="text-neutral-500 text-sm mb-4 sm:mb-0">
               &copy; {new Date().getFullYear()} TwinCoreTech Ltd. All rights
               reserved.
             </p>
             <div className="flex space-x-6">
               <Link
                 to="/privacy"
-                className="text-neutral-400 text-sm hover:text-primary-500 transition-colors"
+                className="text-neutral-500 text-sm hover:text-primary-500 transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
                 to="/terms"
-                className="text-neutral-400 text-sm hover:text-primary-500 transition-colors"
+                className="text-neutral-500 text-sm hover:text-primary-500 transition-colors"
               >
                 Terms of Service
               </Link>
