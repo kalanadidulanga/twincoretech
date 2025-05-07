@@ -35,9 +35,9 @@ const Header = () => {
       <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 via-accent-500 to-tertiary-600 bg-clip-text text-transparent">
-              TwinCoreTech
-            </span>
+          <div className=" w-32 h-auto">
+            <img src="/TwinCoreTechLogo.png" alt="TwinCoreTech" className="w-full object-cover object-center" srcset="" />
+          </div>
           </Link>
 
           {/* Desktop Navigation */}

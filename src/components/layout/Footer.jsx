@@ -6,19 +6,24 @@ const Footer = () => {
     <footer className="bg-neutral-50 py-16 relative overflow-hidden">
       {/* Colorful bottom border based on all logo colors */}
       <div className="absolute top-0 left-0 right-0 h-1 multi-color-gradient"></div>
-      
+
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent-400/5 blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-tertiary-400/5 blur-3xl"></div>
-      
+
       <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and brief description */}
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 via-accent-500 to-tertiary-500 bg-clip-text text-transparent">
-                TwinCoreTech
-              </span>
+              <div className=" w-32 h-auto">
+                <img
+                  src="/TwinCoreTechLogo.png"
+                  alt="TwinCoreTech"
+                  className="w-full object-cover object-center"
+                  srcset=""
+                />
+              </div>
             </Link>
             <p className="text-neutral-600 mb-4">
               Specialist support for digital transformation, operational design,
