@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Services = () => {
   const services = [
@@ -41,7 +42,7 @@ const Services = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M13 10V3L4 14h7v7l9-11h-7z"
+            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
           />
         </svg>
       ),
@@ -63,7 +64,7 @@ const Services = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}
-            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
           />
         </svg>
       ),
@@ -144,39 +145,24 @@ const Services = () => {
   const getColorClasses = (color) => {
     const colorMap = {
       primary: {
-        bg: "bg-primary-100",
-        text: "text-primary-600",
-        hover: "group-hover:bg-primary-600 group-hover:text-white",
-        shadow: "group-hover:shadow-primary-500/30",
-        border: "border-primary-200 group-hover:border-primary-600",
+        icon: "text-primary-600",
+        border: "border-primary-200 hover:border-primary-600",
       },
       accent: {
-        bg: "bg-accent-100",
-        text: "text-accent-600",
-        hover: "group-hover:bg-accent-600 group-hover:text-white",
-        shadow: "group-hover:shadow-accent-500/30",
-        border: "border-accent-200 group-hover:border-accent-600",
+        icon: "text-accent-600",
+        border: "border-accent-200 hover:border-accent-600",
       },
       tertiary: {
-        bg: "bg-tertiary-100",
-        text: "text-tertiary-600",
-        hover: "group-hover:bg-tertiary-600 group-hover:text-white",
-        shadow: "group-hover:shadow-tertiary-500/30",
-        border: "border-tertiary-200 group-hover:border-tertiary-600",
+        icon: "text-tertiary-600",
+        border: "border-tertiary-200 hover:border-tertiary-600",
       },
       secondary: {
-        bg: "bg-secondary-100",
-        text: "text-secondary-600",
-        hover: "group-hover:bg-secondary-600 group-hover:text-white",
-        shadow: "group-hover:shadow-secondary-500/30",
-        border: "border-secondary-200 group-hover:border-secondary-600",
+        icon: "text-secondary-600",
+        border: "border-secondary-200 hover:border-secondary-600",
       },
       gold: {
-        bg: "bg-gold-100",
-        text: "text-gold-600",
-        hover: "group-hover:bg-gold-600 group-hover:text-white",
-        shadow: "group-hover:shadow-gold-500/30",
-        border: "border-gold-200 group-hover:border-gold-600",
+        icon: "text-gold-600",
+        border: "border-gold-200 hover:border-gold-600",
       },
     };
 
@@ -184,59 +170,62 @@ const Services = () => {
   };
 
   return (
-    <section className="py-20 bg-white relative">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
-        <div className="absolute top-0 right-0 left-0 h-1 multi-color-gradient"></div>
-        <div className="absolute -right-20 top-20 w-64 h-64 rounded-full bg-primary-500/20 blur-3xl"></div>
-        <div className="absolute -left-20 bottom-20 w-72 h-72 rounded-full bg-accent-500/20 blur-3xl"></div>
-        <div className="absolute right-1/3 bottom-1/3 w-32 h-32 rounded-full bg-tertiary-500/15 blur-xl"></div>
+    <section className="py-24 bg-neutral-50 relative">
+      {/* Very subtle decorative elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+        <div className="absolute right-0 top-0 w-1/2 h-1/3 bg-gradient-to-b from-primary-200/10 to-transparent"></div>
+        <div className="absolute left-0 bottom-0 w-1/2 h-1/3 bg-gradient-to-t from-accent-200/10 to-transparent"></div>
       </div>
 
-      <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8 relative z-10">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold mb-6 relative inline-block">
-            <span className="bg-gradient-to-r from-primary-600 via-accent-600 to-tertiary-600 bg-clip-text text-transparent">
-              Our Services
-            </span>
-            <span className="absolute -bottom-2 left-1/4 right-1/4 h-1 bg-gradient-to-r from-primary-400/70 via-accent-400/70 to-tertiary-400/70 rounded-full"></span>
-          </h2>
-          <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
-            Our consultancy services focus on end-to-end digital transformation
-            planning and operational setup, ensuring businesses are equipped for
-            successful changes and financial efficiency.
+      <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
+        <div className="max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold mb-5 text-center">Our Services</h2>
+          <div className="h-0.5 w-12 bg-primary-600 mx-auto mb-6"></div>
+          <p className="text-lg text-neutral-700 text-center">
+            Our consultancy services focus on digital transformation planning and operational setup,
+            ensuring businesses are equipped for successful changes and financial efficiency.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
           {services.map((service, index) => {
             const colorClasses = getColorClasses(service.color);
             
             return (
               <div
                 key={index}
-                className="group relative overflow-hidden bg-white rounded-xl border border-neutral-100 hover:border-transparent transition-all duration-500 shadow-sm hover:shadow-lg"
+                className="bg-white rounded-lg p-8 border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300"
               >
-                {/* Highlight border on hover */}
-                <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 border-2 rounded-xl ${colorClasses.border}`}></div>
-                
-                <div className="p-6">
-                  <div className={`mb-6 p-4 rounded-lg inline-flex items-center justify-center ${colorClasses.bg} ${colorClasses.text} transition-all duration-300 ${colorClasses.hover}`}>
-                    {service.icon}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-neutral-900 group-hover:text-neutral-800">
-                    {service.title}
-                  </h3>
-                  <p className="text-neutral-600 group-hover:text-neutral-700">
-                    {service.description}
-                  </p>
+                <div className={`mb-5 ${colorClasses.icon}`}>
+                  {service.icon}
                 </div>
-                
-                {/* Subtle highlight effect */}
-                <div className={`absolute bottom-0 left-0 right-0 h-1 ${colorClasses.bg} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
+                <h3 className="text-xl font-semibold mb-3 text-neutral-900">
+                  {service.title}
+                </h3>
+                <p className="text-neutral-600 mb-6">
+                  {service.description}
+                </p>
+                <Link 
+                  to="/services" 
+                  className={`text-sm font-medium inline-flex items-center ${colorClasses.icon} hover:underline`}
+                >
+                  Learn more
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-14 text-center">
+          <Link
+            to="/services"
+            className="inline-block px-8 py-3 border-2 border-primary-600 text-primary-600 font-medium rounded-md hover:bg-primary-600 hover:text-white transition-all duration-300"
+          >
+            View All Services
+          </Link>
         </div>
       </div>
     </section>

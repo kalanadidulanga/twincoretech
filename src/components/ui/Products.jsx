@@ -15,7 +15,7 @@ const ProductsSection = () => {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-12 w-12 text-white"
+          className="h-9 w-9"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -43,7 +43,7 @@ const ProductsSection = () => {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-12 w-12 text-white"
+          className="h-9 w-9"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -64,14 +64,14 @@ const ProductsSection = () => {
         "Advanced project management suite including dependency modeling and resource planning.",
       features: [
         "Dependency management",
-        "Financial modeling",
         "Resource planning",
+        "Financial modeling",
       ],
       status: "Coming soon",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-12 w-12 text-white"
+          className="h-9 w-9"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -92,34 +92,39 @@ const ProductsSection = () => {
   const getColorClasses = (color) => {
     const colorMap = {
       primary: {
-        bg: "from-primary-600 to-primary-700",
-        hover: "group-hover:from-primary-700 group-hover:to-primary-800",
-        badge: "bg-primary-200 text-primary-800",
-        border: "border-primary-800/20",
+        bg: "bg-primary-50",
+        icon: "text-primary-600",
+        title: "text-primary-700",
+        badge: "bg-primary-100 text-primary-700",
+        border: "border-primary-200"
       },
       accent: {
-        bg: "from-accent-600 to-accent-700",
-        hover: "group-hover:from-accent-700 group-hover:to-accent-800",
-        badge: "bg-accent-200 text-accent-800",
-        border: "border-accent-800/20",
+        bg: "bg-accent-50",
+        icon: "text-accent-600",
+        title: "text-accent-700",
+        badge: "bg-accent-100 text-accent-700",
+        border: "border-accent-200"
       },
       secondary: {
-        bg: "from-secondary-600 to-secondary-700",
-        hover: "group-hover:from-secondary-700 group-hover:to-secondary-800",
-        badge: "bg-secondary-200 text-secondary-800",
-        border: "border-secondary-800/20",
+        bg: "bg-secondary-50",
+        icon: "text-secondary-600",
+        title: "text-secondary-700",
+        badge: "bg-secondary-100 text-secondary-700", 
+        border: "border-secondary-200"
       },
       tertiary: {
-        bg: "from-tertiary-600 to-tertiary-700",
-        hover: "group-hover:from-tertiary-700 group-hover:to-tertiary-800",
-        badge: "bg-tertiary-200 text-tertiary-800",
-        border: "border-tertiary-800/20",
+        bg: "bg-tertiary-50",
+        icon: "text-tertiary-600",
+        title: "text-tertiary-700",
+        badge: "bg-tertiary-100 text-tertiary-700",
+        border: "border-tertiary-200"
       },
       gold: {
-        bg: "from-gold-600 to-gold-700",
-        hover: "group-hover:from-gold-700 group-hover:to-gold-800",
-        badge: "bg-gold-200 text-gold-800",
-        border: "border-gold-800/20",
+        bg: "bg-gold-50",
+        icon: "text-gold-600",
+        title: "text-gold-700",
+        badge: "bg-gold-100 text-gold-700",
+        border: "border-gold-200"
       },
     };
 
@@ -129,124 +134,86 @@ const ProductsSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-20 bg-white relative overflow-hidden"
+      className="py-24 bg-white relative"
     >
-      {/* Colorful background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
-        <div className="absolute top-0 right-0 left-0 h-1 multi-color-gradient"></div>
-        <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-accent-500/20 blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-tertiary-500/20 blur-3xl"></div>
-        <div className="absolute left-1/3 top-1/4 w-40 h-40 rounded-full bg-secondary-500/20 blur-2xl"></div>
-        <div className="absolute right-1/4 bottom-1/3 w-48 h-48 rounded-full bg-primary-500/20 blur-2xl"></div>
-      </div>
-
-      <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto mb-16">
           <h2
             ref={headingRef}
-            className="text-3xl font-bold mb-6 relative inline-block"
+            className="text-3xl font-bold mb-5 text-center"
           >
-            <span className="bg-gradient-to-r from-accent-500 via-tertiary-500 to-primary-500 bg-clip-text text-transparent">
-              Omadeas Product Suite
-            </span>
-            <span className="absolute -bottom-2 left-1/4 right-1/4 h-1 bg-gradient-to-r from-accent-400/70 via-tertiary-400/70 to-primary-400/70 rounded-full"></span>
+            Our Products
           </h2>
-          <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
+          <div className="h-0.5 w-12 bg-primary-600 mx-auto mb-6"></div>
+          <p className="text-lg text-neutral-700 text-center">
             Born from real-world experience delivering complex digital
-            transformation programmes across UK and European financial services,
-            insurance, and pensions sectors.
+            transformation programmes across financial services, insurance, and pensions sectors.
           </p>
         </div>
 
-        <div className="space-y-12 md:space-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product, index) => {
             const colorClasses = getColorClasses(product.color);
             
             return (
               <div
                 key={index}
-                className="group relative overflow-hidden bg-white rounded-xl p-6 lg:p-8 border border-neutral-100 hover:border-neutral-200 transition-all duration-500 shadow-sm hover:shadow-md"
+                className="bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300 overflow-hidden group"
               >
-                {/* Product card shine effect */}
-                <div className="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-br from-white/40 to-white/10 rotate-12 transform transition-transform duration-1000 group-hover:translate-x-24 group-hover:translate-y-24 rounded-full"></div>
+                <div className={`p-6 ${colorClasses.bg} border-b ${colorClasses.border}`}>
+                  <div className={`mb-4 ${colorClasses.icon}`}>
+                    {product.icon}
+                  </div>
+                  <h3 className={`text-xl font-semibold mb-2 ${colorClasses.title}`}>
+                    {product.name}
+                  </h3>
+                  <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${colorClasses.badge}`}>
+                    {product.status}
+                  </span>
+                </div>
                 
-                {/* Product card border glow effect */}
-                <div className="absolute inset-0 p-[1px] rounded-xl bg-gradient-to-r from-white/0 via-white/20 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                <div className="flex flex-col md:flex-row md:items-center gap-8">
-                  <div className="md:w-1/4 flex justify-center md:justify-start">
-                    <div className={`p-4 bg-gradient-to-br ${colorClasses.bg} ${colorClasses.hover} rounded-lg border ${colorClasses.border} shadow-lg transition-all duration-300 flex items-center justify-center`}>
-                      {product.icon}
-                    </div>
-                  </div>
+                <div className="p-6">
+                  <p className="text-neutral-600 mb-6">{product.description}</p>
                   
-                  <div className="md:w-3/4">
-                    <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                      <h3 className={`text-2xl font-bold mb-2 md:mb-0 bg-gradient-to-r ${colorClasses.bg} bg-clip-text text-transparent`}>
-                        {product.name}
-                      </h3>
-                      <span className={`${colorClasses.badge} text-sm px-3 py-1 rounded-full inline-block font-medium`}>
-                        {product.status}
-                      </span>
+                  <div>
+                    <div className="text-sm uppercase text-neutral-500 mb-3 font-medium">
+                      Key Features
                     </div>
-                    
-                    <p className="text-neutral-700 mb-6">{product.description}</p>
-                    
-                    <div className="mb-6">
-                      <h4 className="text-sm text-neutral-500 mb-3 uppercase tracking-wider font-medium">
-                        Key Features
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {product.features.map((feature, fIndex) => (
-                          <span
-                            key={fIndex}
-                            className={`${colorClasses.badge} bg-opacity-30 px-3 py-1 rounded-md text-sm border ${colorClasses.border} transition-colors duration-300`}
-                          >
-                            {feature}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    <div className="text-right">
-                      <Link
-                        to="/products"
-                        className={`inline-flex items-center bg-gradient-to-r ${colorClasses.bg} bg-clip-text text-transparent font-medium transition-colors duration-300`}
-                      >
-                        Learn more
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className={`h-5 w-5 ml-1 bg-gradient-to-r ${colorClasses.bg} bg-clip-text text-transparent group-hover:translate-x-1 transition-transform duration-300`}
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
+                    <ul className="space-y-2">
+                      {product.features.map((feature, fIndex) => (
+                        <li key={fIndex} className="flex items-center">
+                          <svg className={`h-4 w-4 mr-2 ${colorClasses.icon}`} viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <span className="text-neutral-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+                </div>
+                
+                <div className="px-6 pb-6 pt-2">
+                  <Link 
+                    to="/products" 
+                    className={`text-sm font-medium inline-flex items-center ${colorClasses.icon} hover:underline`}
+                  >
+                    Learn more
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </div>
               </div>
             );
           })}
         </div>
 
-        {/* Enhanced CTA with gradient button */}
-        <div className="mt-16 text-center">
+        <div className="mt-14 text-center">
           <Link
             to="/products"
-            className="inline-block relative overflow-hidden group rounded-md"
+            className="inline-block px-8 py-3 border-2 border-primary-600 text-primary-600 font-medium rounded-md hover:bg-primary-600 hover:text-white transition-all duration-300"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-accent-500 via-tertiary-500 to-primary-500 group-hover:from-accent-600 group-hover:via-tertiary-600 group-hover:to-primary-600 transition-all duration-300"></span>
-            <span className="relative block text-white font-medium px-8 py-3 z-10">
-              View All Products
-              <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-white/30"></span>
-            </span>
-            <span className="absolute -inset-[100%] bg-gradient-to-r from-accent-400/20 via-tertiary-400/20 to-primary-400/20 blur-xl transform rotate-45 translate-x-full group-hover:translate-x-0 transition-transform duration-700"></span>
+            View All Products
           </Link>
         </div>
       </div>
