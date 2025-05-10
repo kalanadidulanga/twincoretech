@@ -170,8 +170,10 @@ const Services = () => {
   };
 
   return (
-    <section className="py-24 bg-neutral-50 relative">
-      {/* Very subtle decorative elements */}
+    // <section className="py-24 bg-neutral-50 relative">
+    <section className="py-24 bg-white relative">
+
+    {/* Very subtle decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
         <div className="absolute right-0 top-0 w-1/2 h-1/3 bg-gradient-to-b from-primary-200/10 to-transparent"></div>
         <div className="absolute left-0 bottom-0 w-1/2 h-1/3 bg-gradient-to-t from-accent-200/10 to-transparent"></div>

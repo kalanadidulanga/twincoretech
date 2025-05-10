@@ -132,49 +132,50 @@ const ProductsSection = () => {
   };
 
   return (
-    <section
-      ref={sectionRef}
-      className="py-24 bg-white relative"
-    >
+    <section ref={sectionRef} className="py-24 bg-neutral-50 relative">
       <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
         <div className="max-w-3xl mx-auto mb-16">
-          <h2
-            ref={headingRef}
-            className="text-3xl font-bold mb-5 text-center"
-          >
+          <h2 ref={headingRef} className="text-3xl font-bold mb-5 text-center">
             Our Products
           </h2>
           <div className="h-0.5 w-12 bg-primary-600 mx-auto mb-6"></div>
           <p className="text-lg text-neutral-700 text-center">
             Born from real-world experience delivering complex digital
-            transformation programmes across financial services, insurance, and pensions sectors.
+            transformation programmes across financial services, insurance, and
+            pensions sectors.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product, index) => {
             const colorClasses = getColorClasses(product.color);
-            
+
             return (
               <div
                 key={index}
                 className="bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300 overflow-hidden group"
               >
-                <div className={`p-6 ${colorClasses.bg} border-b ${colorClasses.border}`}>
+                <div
+                  className={`p-6 ${colorClasses.bg} border-b ${colorClasses.border}`}
+                >
                   <div className={`mb-4 ${colorClasses.icon}`}>
                     {product.icon}
                   </div>
-                  <h3 className={`text-xl font-semibold mb-2 ${colorClasses.title}`}>
+                  <h3
+                    className={`text-xl font-semibold mb-2 ${colorClasses.title}`}
+                  >
                     {product.name}
                   </h3>
-                  <span className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${colorClasses.badge}`}>
+                  <span
+                    className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${colorClasses.badge}`}
+                  >
                     {product.status}
                   </span>
                 </div>
-                
+
                 <div className="p-6">
                   <p className="text-neutral-600 mb-6">{product.description}</p>
-                  
+
                   <div>
                     <div className="text-sm uppercase text-neutral-500 mb-3 font-medium">
                       Key Features
@@ -182,8 +183,16 @@ const ProductsSection = () => {
                     <ul className="space-y-2">
                       {product.features.map((feature, fIndex) => (
                         <li key={fIndex} className="flex items-center">
-                          <svg className={`h-4 w-4 mr-2 ${colorClasses.icon}`} viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          <svg
+                            className={`h-4 w-4 mr-2 ${colorClasses.icon}`}
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                           <span className="text-neutral-700">{feature}</span>
                         </li>
@@ -191,15 +200,26 @@ const ProductsSection = () => {
                     </ul>
                   </div>
                 </div>
-                
+
                 <div className="px-6 pb-6 pt-2">
-                  <Link 
-                    to="/products" 
+                  <Link
+                    to="/products"
                     className={`text-sm font-medium inline-flex items-center ${colorClasses.icon} hover:underline`}
                   >
                     Learn more
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </Link>
                 </div>

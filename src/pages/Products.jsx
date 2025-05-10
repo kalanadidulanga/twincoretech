@@ -191,17 +191,47 @@ const Products = () => {
         ref={heroRef}
         className="relative min-h-[60vh] flex items-center overflow-hidden bg-neutral-50"
       >
-        {/* Very subtle decorative elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
-          <div className="absolute right-0 top-0 w-1/2 h-1/3 bg-gradient-to-b from-primary-200/10 to-transparent"></div>
-          <div className="absolute left-0 bottom-0 w-1/2 h-1/3 bg-gradient-to-t from-accent-200/10 to-transparent"></div>
-          
-          {/* Simple grid pattern */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
-          
-          {/* Delicate border lines */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/10 to-transparent"></div>
+        {/* Enhanced background elements with beautiful blurry animation */}
+        <div className="absolute inset-0 overflow-hidden animate-color-shift">
+          {/* Large ethereal orb with subtle color shifting */}
+          <div
+            className="absolute top-[20%] left-[45%] w-[40%] h-[40%] rounded-full bg-gradient-to-br from-primary-400/10 to-accent-300/5 blur-[100px] animate-float animate-drift"
+            style={{ animationDuration: "30s" }}
+          ></div>
+
+          {/* Secondary floating element with soft edges */}
+          <div
+            className="absolute bottom-[30%] right-[35%] w-[25%] h-[35%] rounded-full bg-gradient-to-tl from-secondary-400/8 to-tertiary-300/4 blur-[90px] animate-float"
+            style={{ animationDuration: "22s", animationDelay: "2s" }}
+          ></div>
+
+          {/* Accent bubble with gentle pulsation */}
+          <div
+            className="absolute left-[15%] top-[40%] w-[20%] h-[25%] rounded-full bg-gradient-to-tr from-accent-300/6 to-primary-300/3 blur-[80px] animate-pulse-slower"
+            style={{ animationDuration: "15s" }}
+          ></div>
+
+          {/* Ethereal light beam that flows across the screen */}
+          <div
+            className="absolute inset-y-0 w-full h-[40%] top-[30%] bg-gradient-to-r from-primary-200/5 via-accent-200/8 to-secondary-200/5 blur-[120px] animate-flow-x"
+            style={{ animationDuration: "40s" }}
+          ></div>
+
+          {/* Overlay with subtle texture */}
+          <div
+            className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift"
+            style={{ animationDuration: "50s" }}
+          ></div>
+
+          {/* Delicate animated border lines */}
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
+          <div
+            className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/10 to-transparent animate-flow-x-reverse"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
         </div>
 
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 pt-24 pb-16">
@@ -213,9 +243,15 @@ const Products = () => {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight relative">
               <span className="text-neutral-900">Our </span>
-              <span className="text-primary-600 relative">
+              <span className="bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent animate-color-shift relative">
                 Products
-                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-primary-500 rounded-full"></span>
+                <span
+                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 via-accent-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left"
+                  style={{
+                    animation: "scale-x 1.5s ease-out forwards",
+                    animationDelay: "0.5s",
+                  }}
+                ></span>
               </span>
             </h1>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl mx-auto">
@@ -223,6 +259,17 @@ const Products = () => {
               digital transformation programmes across financial services,
               insurance, and pensions sectors.
             </p>
+            <div className="flex justify-center space-x-3">
+              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 animate-bounce"></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-accent-400 to-accent-500 animate-bounce"
+                style={{ animationDelay: "0.2s" }}
+              ></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce"
+                style={{ animationDelay: "0.4s" }}
+              ></div>
+            </div>
           </div>
         </div>
       </section>
