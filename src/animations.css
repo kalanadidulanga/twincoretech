@@ -69,6 +69,48 @@
   }
 }
 
+/* Color shift animation for ethereal effects */
+@keyframes color-shift {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(5deg);
+  }
+  50% {
+    filter: hue-rotate(0deg);
+  }
+  75% {
+    filter: hue-rotate(-5deg);
+  }
+}
+
+/* Subtle drift animation for background elements */
+@keyframes drift {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, -5px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+}
+
+/* Scaling animation for underlines */
+@keyframes scale-x {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 /* Animation classes */
 .animate-pulse-slow {
   animation: pulse-slow 7s infinite ease-in-out;
@@ -90,4 +132,12 @@
 
 .animate-subtle-shift {
   animation: subtle-shift 25s infinite alternate linear;
+}
+
+.animate-color-shift {
+  animation: color-shift 20s infinite alternate ease-in-out;
+}
+
+.animate-drift {
+  animation: drift 30s infinite ease-in-out;
 }

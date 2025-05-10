@@ -188,19 +188,26 @@ const Products = () => {
     <Layout>
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-[60vh] flex items-center overflow-hidden bg-neutral-50">
-        {/* Enhanced background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          {/* Animated gradient blobs */}
-          <div className="absolute -right-[10%] top-[10%] w-[35%] h-[35%] rounded-full bg-gradient-to-br from-primary-300/15 to-accent-400/10 blur-[80px] animate-pulse-slow"></div>
-          <div className="absolute right-[40%] top-[5%] w-[20%] h-[20%] rounded-full bg-gradient-to-br from-secondary-300/10 to-primary-400/5 blur-[70px] animate-float"></div>
-          <div className="absolute -left-[5%] bottom-[15%] w-[25%] h-[25%] rounded-full bg-gradient-to-tr from-tertiary-300/10 to-accent-400/5 blur-[60px] animate-pulse-slower"></div>
+        {/* Enhanced background elements with beautiful blurry animation */}
+        <div className="absolute inset-0 overflow-hidden animate-color-shift">
+          {/* Large primary color cloud with subtle drift */}
+          <div className="absolute right-[20%] top-[10%] w-[50%] h-[40%] rounded-full bg-gradient-to-br from-primary-300/10 to-secondary-400/5 blur-[120px] animate-drift" style={{ animationDuration: '35s' }}></div>
           
-          {/* Dynamic grid pattern with subtle animation */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.02] animate-subtle-shift"></div>
+          {/* Accent color cloud that gently pulses */}
+          <div className="absolute left-[30%] bottom-[20%] w-[40%] h-[30%] rounded-full bg-gradient-to-tr from-accent-300/8 to-tertiary-300/4 blur-[100px] animate-pulse-slow" style={{ animationDuration: '25s', animationDelay: '3s' }}></div>
           
-          {/* Subtle animated lines */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/20 to-transparent animate-flow-x"></div>
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/20 to-transparent animate-flow-x-reverse"></div>
+          {/* Smaller floating element with vertical movement */}
+          <div className="absolute left-[15%] top-[25%] w-[25%] h-[20%] rounded-full bg-gradient-to-bl from-secondary-300/7 to-primary-400/3 blur-[90px] animate-float" style={{ animationDuration: '28s', animationDelay: '5s' }}></div>
+          
+          {/* Horizontal light beam with slow color shift */}
+          <div className="absolute inset-y-0 w-full h-[45%] top-[25%] bg-gradient-to-r from-secondary-200/3 via-accent-300/7 to-primary-200/3 blur-[130px] animate-flow-x" style={{ animationDuration: '45s' }}></div>
+          
+          {/* Ultra-fine grid pattern for depth */}
+          <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift" style={{ animationDuration: '60s' }}></div>
+          
+          {/* Delicate animated border lines */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary-300/10 to-transparent animate-flow-x" style={{ backgroundSize: '200% 100%' }}></div>
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x-reverse" style={{ backgroundSize: '200% 100%' }}></div>
         </div>
         
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
@@ -208,18 +215,22 @@ const Products = () => {
             <div className="inline-block mb-2 px-3 py-1 bg-primary-50 border border-primary-100 rounded-full">
               <span className="text-sm text-primary-600 font-medium">Omadeas Product Suite</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight relative">
               <span className="text-neutral-900">Our </span>
-              <span className="bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">Products</span>
+              <span className="bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent animate-color-shift relative">
+                Products
+                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 via-accent-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left" 
+                      style={{ animation: 'scale-x 1.5s ease-out forwards', animationDelay: '0.5s' }}></span>
+              </span>
             </h1>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl mx-auto">
               Solutions born from real-world experience delivering complex digital transformation 
               programmes across financial services, insurance, and pensions sectors.
             </p>
-            <div className="flex justify-center space-x-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-primary-400 animate-bounce"></div>
-              <div className="h-1.5 w-1.5 rounded-full bg-accent-400 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-              <div className="h-1.5 w-1.5 rounded-full bg-secondary-400 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+            <div className="flex justify-center space-x-3">
+              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 animate-bounce"></div>
+              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-accent-400 to-accent-500 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
             </div>
           </div>
         </div>

@@ -16,8 +16,8 @@ const Hero = () => {
         {/* Subtle secondary accent in bottom left */}
         <div className="absolute -left-[5%] bottom-[5%] w-[20%] h-[20%] rounded-full bg-gradient-to-br from-tertiary-300/10 to-tertiary-400/5 blur-[60px]"></div>
         
-        {/* Very subtle grid pattern overlay */}
-        <div className="absolute inset-0 bg-grid-pattern opacity-[0.01]"></div>
+        {/* Very subtle grid pattern overlay with animation */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift" style={{ animationDuration: '70s' }}></div>
       </div>
       
       <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
