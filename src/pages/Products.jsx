@@ -289,31 +289,38 @@ const Products = () => {
       {/* Product Roadmap Section */}
       <section ref={timelineRef} className="py-20 bg-neutral-50">
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-5">Future Innovations</h2>
-            <div className="h-0.5 w-12 bg-primary-600 mb-6"></div>
+          <div className="mb-16 relative">
+            <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-secondary-400 to-primary-400 rounded-full"></div>
+            <div className="inline-block mb-2 px-3 py-1 bg-secondary-50 border border-secondary-100 rounded-full">
+              <span className="text-sm text-secondary-600 font-medium">Product Roadmap</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-secondary-600 via-accent-500 to-primary-500 bg-clip-text text-transparent inline-block">Future Innovations</h2>
+            <div className="h-0.5 w-24 bg-gradient-to-r from-secondary-500 to-primary-400 mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700">
               Our product roadmap includes these upcoming solutions to further enhance digital transformation capabilities.
             </p>
+            <div className="absolute -z-10 w-28 h-28 bg-secondary-50 rounded-full blur-2xl opacity-30 -bottom-10 -right-10"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {futureProducts.map((product) => (
               <div 
                 key={product.id}
-                className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-md transition-all duration-300"
+                className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300 group relative overflow-hidden"
               >
-                <div className="h-12 w-12 flex items-center justify-center rounded-full bg-primary-100 mb-5">
-                  <div className="text-primary-600">
+                <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-secondary-400 via-primary-400 to-accent-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                <div className="h-14 w-14 flex items-center justify-center rounded-full bg-gradient-to-br from-secondary-100 to-primary-50 mb-6 shadow-sm group-hover:shadow-md transition-all duration-300">
+                  <div className="text-primary-600 group-hover:scale-110 transition-transform duration-300">
                     {product.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-neutral-900">
+                <h3 className="text-xl font-semibold mb-3 text-neutral-900 group-hover:text-primary-600 transition-colors duration-300">
                   {product.name}
                 </h3>
                 <p className="text-neutral-600">
                   {product.description}
                 </p>
+                <div className="absolute -bottom-16 -right-16 w-32 h-32 bg-secondary-50 rounded-full blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
               </div>
             ))}
           </div>

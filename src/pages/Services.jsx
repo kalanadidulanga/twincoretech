@@ -55,11 +55,16 @@ const Services = () => {
       <ServicesSection />
 
       {/* Our Approach Section */}
-      <section className="py-20 bg-neutral-50">
+      <section className="py-20 bg-neutral-50 relative">
+        <div className="absolute -z-10 w-32 h-32 bg-primary-50 rounded-full blur-3xl opacity-30 top-20 -left-10"></div>
+        <div className="absolute -z-10 w-40 h-40 bg-accent-50 rounded-full blur-3xl opacity-30 bottom-20 -right-10"></div>
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-5">Our Approach</h2>
-            <div className="h-0.5 w-12 bg-primary-600 mx-auto mb-6"></div>
+          <div className="text-center mb-16 relative">
+            <div className="inline-block mb-2 px-3 py-1 bg-secondary-50 border border-secondary-100 rounded-full">
+              <span className="text-sm text-secondary-600 font-medium">Our Methodology</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">Our Approach</h2>
+            <div className="h-0.5 w-20 bg-gradient-to-r from-primary-400 to-secondary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               We deliver value through a structured yet flexible methodology
               that ensures measurable outcomes.
@@ -67,11 +72,12 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-primary-100 text-primary-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-300 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-primary-100 text-primary-600 group-hover:bg-primary-200 transition-colors duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-8 w-8 group-hover:scale-110 transition-transform duration-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -84,20 +90,22 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900 group-hover:text-primary-700 transition-colors duration-300">
                 Assess
               </h3>
               <p className="text-neutral-600">
                 We analyze your current systems, processes, and challenges to
                 establish a clear baseline.
               </p>
+              <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-primary-50 rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
             </div>
 
-            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-accent-100 text-accent-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-400 to-accent-300 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-accent-100 text-accent-600 group-hover:bg-accent-200 transition-colors duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-8 w-8 group-hover:scale-110 transition-transform duration-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -110,20 +118,22 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900 group-hover:text-accent-700 transition-colors duration-300">
                 Plan
               </h3>
               <p className="text-neutral-600">
                 We develop a comprehensive roadmap with clear milestones,
                 resources, and success metrics.
               </p>
+              <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-accent-50 rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
             </div>
 
-            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-secondary-100 text-secondary-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary-400 to-secondary-300 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-secondary-100 text-secondary-600 group-hover:bg-secondary-200 transition-colors duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-8 w-8 group-hover:scale-110 transition-transform duration-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -136,20 +146,22 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900 group-hover:text-secondary-700 transition-colors duration-300">
                 Implement
               </h3>
               <p className="text-neutral-600">
                 We execute with precision, using agile methodologies to adapt to
                 evolving requirements.
               </p>
+              <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-secondary-50 rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
             </div>
 
-            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-tertiary-100 text-tertiary-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-tertiary-400 to-tertiary-300 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-tertiary-100 text-tertiary-600 group-hover:bg-tertiary-200 transition-colors duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-8 w-8 group-hover:scale-110 transition-transform duration-300"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -162,24 +174,30 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900 group-hover:text-tertiary-700 transition-colors duration-300">
                 Optimize
               </h3>
               <p className="text-neutral-600">
                 We continuously measure, refine, and enhance to ensure
                 sustainable long-term value.
               </p>
+              <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-tertiary-50 rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Industries Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white relative">
+        <div className="absolute -z-10 w-36 h-36 bg-accent-50 rounded-full blur-3xl opacity-30 top-10 -right-10"></div>
+        <div className="absolute -z-10 w-44 h-44 bg-primary-50 rounded-full blur-3xl opacity-30 bottom-10 -left-10"></div>
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-5">Industries We Serve</h2>
-            <div className="h-0.5 w-12 bg-primary-600 mx-auto mb-6"></div>
+          <div className="text-center mb-16 relative">
+            <div className="inline-block mb-2 px-3 py-1 bg-tertiary-50 border border-tertiary-100 rounded-full">
+              <span className="text-sm text-tertiary-600 font-medium">Our Expertise</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-tertiary-600 via-primary-500 to-accent-500 bg-clip-text text-transparent">Industries We Serve</h2>
+            <div className="h-0.5 w-20 bg-gradient-to-r from-tertiary-400 to-primary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               We have deep expertise in these sectors, with a proven track
               record of successful digital transformation projects.
