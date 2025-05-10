@@ -187,29 +187,40 @@ const Products = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-[50vh] flex items-center overflow-hidden bg-neutral-50">
-        {/* Subtle background elements */}
+      <section ref={heroRef} className="relative min-h-[60vh] flex items-center overflow-hidden bg-neutral-50">
+        {/* Enhanced background elements */}
         <div className="absolute inset-0 overflow-hidden">
-          {/* Subtle accent color gradient in top right */}
-          <div className="absolute -right-[15%] top-[5%] w-[30%] h-[30%] rounded-full bg-gradient-to-br from-primary-300/10 to-primary-400/5 blur-[80px]"></div>
+          {/* Animated gradient blobs */}
+          <div className="absolute -right-[10%] top-[10%] w-[35%] h-[35%] rounded-full bg-gradient-to-br from-primary-300/15 to-accent-400/10 blur-[80px] animate-pulse-slow"></div>
+          <div className="absolute right-[40%] top-[5%] w-[20%] h-[20%] rounded-full bg-gradient-to-br from-secondary-300/10 to-primary-400/5 blur-[70px] animate-float"></div>
+          <div className="absolute -left-[5%] bottom-[15%] w-[25%] h-[25%] rounded-full bg-gradient-to-tr from-tertiary-300/10 to-accent-400/5 blur-[60px] animate-pulse-slower"></div>
           
-          {/* Subtle secondary accent in bottom left */}
-          <div className="absolute -left-[5%] bottom-[5%] w-[20%] h-[20%] rounded-full bg-gradient-to-br from-tertiary-300/10 to-tertiary-400/5 blur-[60px]"></div>
+          {/* Dynamic grid pattern with subtle animation */}
+          <div className="absolute inset-0 bg-grid-pattern opacity-[0.02] animate-subtle-shift"></div>
           
-          {/* Very subtle grid pattern overlay */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.01]"></div>
+          {/* Subtle animated lines */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/20 to-transparent animate-flow-x"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/20 to-transparent animate-flow-x-reverse"></div>
         </div>
         
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
+            <div className="inline-block mb-2 px-3 py-1 bg-primary-50 border border-primary-100 rounded-full">
+              <span className="text-sm text-primary-600 font-medium">Omadeas Product Suite</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              <span className="text-neutral-900">Our</span>
-              <span className="text-primary-600"> Products</span>
+              <span className="text-neutral-900">Our </span>
+              <span className="bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">Products</span>
             </h1>
-            <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl mx-auto">
               Solutions born from real-world experience delivering complex digital transformation 
               programmes across financial services, insurance, and pensions sectors.
             </p>
+            <div className="flex justify-center space-x-2">
+              <div className="h-1.5 w-1.5 rounded-full bg-primary-400 animate-bounce"></div>
+              <div className="h-1.5 w-1.5 rounded-full bg-accent-400 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+              <div className="h-1.5 w-1.5 rounded-full bg-secondary-400 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+            </div>
           </div>
         </div>
       </section>
@@ -217,12 +228,14 @@ const Products = () => {
       {/* Main Products Section */}
       <section className="py-20 bg-white">
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-5">Core Product Suite</h2>
-            <div className="h-0.5 w-12 bg-primary-600 mb-6"></div>
+          <div className="mb-16 relative">
+            <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary-400 to-accent-400 rounded-full"></div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent inline-block">Core Product Suite</h2>
+            <div className="h-0.5 w-24 bg-gradient-to-r from-primary-500 to-accent-400 mb-6 transform transition-all duration-700 hover:w-32"></div>
             <p className="text-lg text-neutral-700">
               Our flagship products designed to streamline and enhance digital transformation processes.
             </p>
+            <div className="absolute -z-10 w-24 h-24 bg-primary-50 rounded-full blur-2xl opacity-30 -bottom-10 -right-10"></div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
