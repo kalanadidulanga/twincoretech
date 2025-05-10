@@ -13,51 +13,54 @@ const Services = () => {
   return (
     <Layout>
       {/* Services Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-600 via-primary-800 to-secondary-800 text-white relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute left-1/4 top-1/4 w-64 h-64 rounded-full bg-primary-400/20 blur-3xl"></div>
-          <div className="absolute right-1/4 bottom-1/3 w-64 h-64 rounded-full bg-secondary-400/20 blur-3xl"></div>
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-neutral-50">
+        {/* Subtle background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Subtle accent color gradient in top right */}
+          <div className="absolute -right-[15%] top-[5%] w-[30%] h-[30%] rounded-full bg-gradient-to-br from-primary-300/10 to-primary-400/5 blur-[80px]"></div>
+          
+          {/* Subtle secondary accent in bottom left */}
+          <div className="absolute -left-[5%] bottom-[5%] w-[20%] h-[20%] rounded-full bg-gradient-to-br from-tertiary-300/10 to-tertiary-400/5 blur-[60px]"></div>
+          
+          {/* Very subtle grid pattern overlay */}
+          <div className="absolute inset-0 bg-grid-pattern opacity-[0.01]"></div>
         </div>
 
-        <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              <span className="bg-gradient-to-r from-accent-300 via-white to-secondary-300 bg-clip-text text-transparent">
-                Our Services
-              </span>
+        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              <span className="text-neutral-900">Our</span>
+              <span className="text-primary-600"> Services</span>
             </h1>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed backdrop-blur-sm bg-black/5 rounded-lg p-4">
-              End-to-end digital transformation services and operational
-              expertise tailored to your organization's specific needs and
-              goals.
+            <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
+              End-to-end digital transformation services and operational expertise 
+              tailored to your organization's specific needs and goals.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main Services Listing */}
+      {/* Services Content Section */}
       <ServicesSection />
 
-      {/* Service Approach Section */}
-      <section className="py-20 bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-950 relative">
-        <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8">
+      {/* Our Approach Section */}
+      <section className="py-20 bg-neutral-50">
+        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-              Our Approach
-            </h2>
-            <p className="text-lg text-neutral-700 dark:text-neutral-300 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-5">Our Approach</h2>
+            <div className="h-0.5 w-12 bg-primary-600 mx-auto mb-6"></div>
+            <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               We deliver value through a structured yet flexible methodology
               that ensures measurable outcomes.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="card p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-gradient-to-br from-primary-500 to-primary-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-primary-100 text-primary-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -70,20 +73,20 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-neutral-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
                 Assess
               </h3>
-              <p className="text-neutral-700 dark:text-neutral-300">
+              <p className="text-neutral-600">
                 We analyze your current systems, processes, and challenges to
                 establish a clear baseline.
               </p>
             </div>
 
-            <div className="card p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-gradient-to-br from-accent-500 to-accent-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-accent-100 text-accent-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -96,20 +99,20 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-neutral-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
                 Plan
               </h3>
-              <p className="text-neutral-700 dark:text-neutral-300">
+              <p className="text-neutral-600">
                 We develop a comprehensive roadmap with clear milestones,
                 resources, and success metrics.
               </p>
             </div>
 
-            <div className="card p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-gradient-to-br from-secondary-500 to-secondary-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-secondary-100 text-secondary-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -122,20 +125,20 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-neutral-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
                 Implement
               </h3>
-              <p className="text-neutral-700 dark:text-neutral-300">
+              <p className="text-neutral-600">
                 We execute with precision, using agile methodologies to adapt to
                 evolving requirements.
               </p>
             </div>
 
-            <div className="card p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-gradient-to-br from-primary-600 to-secondary-600">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
+              <div className="mb-4 p-3 rounded-lg inline-flex items-center justify-center bg-tertiary-100 text-tertiary-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -148,10 +151,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-neutral-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-2 text-neutral-900">
                 Optimize
               </h3>
-              <p className="text-neutral-700 dark:text-neutral-300">
+              <p className="text-neutral-600">
                 We continuously measure, refine, and enhance to ensure
                 sustainable long-term value.
               </p>
@@ -160,25 +163,24 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Industries We Serve */}
-      <section className="py-20 bg-white dark:bg-neutral-800">
-        <div className="container max-w-[var(--container-max)] mx-auto px-4 lg:px-8">
+      {/* Industries Section */}
+      <section className="py-20 bg-white">
+        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-accent-600 to-primary-600 bg-clip-text text-transparent">
-              Industries We Serve
-            </h2>
-            <p className="text-lg text-neutral-700 dark:text-neutral-300 max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-5">Industries We Serve</h2>
+            <div className="h-0.5 w-12 bg-primary-600 mx-auto mb-6"></div>
+            <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               We have deep expertise in these sectors, with a proven track
               record of successful digital transformation projects.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="card p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 bg-primary-100 dark:bg-primary-900/50 rounded-lg inline-block">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
+              <div className="mb-4 p-3 bg-primary-100 rounded-lg inline-block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-primary-600 dark:text-primary-400"
+                  className="h-8 w-8 text-primary-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -191,20 +193,20 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-3 text-neutral-900">
                 Financial Services
               </h3>
-              <p className="text-neutral-600 dark:text-neutral-300">
+              <p className="text-neutral-600">
                 Banks, investment firms, and financial institutions seeking
                 digital innovation and regulatory compliance.
               </p>
             </div>
 
-            <div className="card p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 bg-accent-100 dark:bg-accent-900/50 rounded-lg inline-block">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
+              <div className="mb-4 p-3 bg-accent-100 rounded-lg inline-block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-accent-600 dark:text-accent-400"
+                  className="h-8 w-8 text-accent-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -217,20 +219,20 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-3 text-neutral-900">
                 Insurance
               </h3>
-              <p className="text-neutral-600 dark:text-neutral-300">
+              <p className="text-neutral-600">
                 Life and general insurance providers looking to modernize legacy
                 systems and improve operational efficiency.
               </p>
             </div>
 
-            <div className="card p-6 hover:shadow-lg transition-all duration-300">
-              <div className="mb-4 p-3 bg-secondary-100 dark:bg-secondary-900/50 rounded-lg inline-block">
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300">
+              <div className="mb-4 p-3 bg-secondary-100 rounded-lg inline-block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-secondary-600 dark:text-secondary-400"
+                  className="h-8 w-8 text-secondary-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -243,10 +245,10 @@ const Services = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">
+              <h3 className="text-xl font-semibold mb-3 text-neutral-900">
                 Pensions
               </h3>
-              <p className="text-neutral-600 dark:text-neutral-300">
+              <p className="text-neutral-600">
                 Pension providers and administrators seeking to enhance data
                 management and streamline member services.
               </p>
@@ -255,7 +257,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Contact CTA Section */}
       <ContactCTA />
     </Layout>
   );
