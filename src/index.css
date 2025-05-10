@@ -101,6 +101,7 @@
   body {
     @apply bg-white text-neutral-800 antialiased min-h-screen;
     background-attachment: fixed;
+    overflow-x: hidden;
   }
 
   body::before {

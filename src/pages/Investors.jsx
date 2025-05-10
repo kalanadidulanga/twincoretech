@@ -92,36 +92,64 @@ const Investors = () => {
         {/* Enhanced background elements with beautiful blurry animation */}
         <div className="absolute inset-0 overflow-hidden animate-color-shift">
           {/* Large ethereal orb with subtle color shifting */}
-          <div className="absolute top-[20%] left-[45%] w-[40%] h-[40%] rounded-full bg-gradient-to-br from-primary-400/10 to-accent-300/5 blur-[100px] animate-float animate-drift" style={{ animationDuration: '30s' }}></div>
-          
+          <div
+            className="absolute top-[20%] left-[45%] w-[40%] h-[40%] rounded-full bg-gradient-to-br from-primary-400/10 to-accent-300/5 blur-[100px] animate-float animate-drift"
+            style={{ animationDuration: "30s" }}
+          ></div>
+
           {/* Secondary floating element with soft edges */}
-          <div className="absolute bottom-[30%] right-[35%] w-[25%] h-[35%] rounded-full bg-gradient-to-tl from-secondary-400/8 to-tertiary-300/4 blur-[90px] animate-float" style={{ animationDuration: '22s', animationDelay: '2s' }}></div>
-          
+          <div
+            className="absolute bottom-[30%] right-[35%] w-[25%] h-[35%] rounded-full bg-gradient-to-tl from-secondary-400/8 to-tertiary-300/4 blur-[90px] animate-float"
+            style={{ animationDuration: "22s", animationDelay: "2s" }}
+          ></div>
+
           {/* Accent bubble with gentle pulsation */}
-          <div className="absolute left-[15%] top-[40%] w-[20%] h-[25%] rounded-full bg-gradient-to-tr from-accent-300/6 to-primary-300/3 blur-[80px] animate-pulse-slower" style={{ animationDuration: '15s' }}></div>
-          
+          <div
+            className="absolute left-[15%] top-[40%] w-[20%] h-[25%] rounded-full bg-gradient-to-tr from-accent-300/6 to-primary-300/3 blur-[80px] animate-pulse-slower"
+            style={{ animationDuration: "15s" }}
+          ></div>
+
           {/* Ethereal light beam that flows across the screen */}
-          <div className="absolute inset-y-0 w-full h-[40%] top-[30%] bg-gradient-to-r from-primary-200/5 via-accent-200/8 to-secondary-200/5 blur-[120px] animate-flow-x" style={{ animationDuration: '40s' }}></div>
-          
+          <div
+            className="absolute inset-y-0 w-full h-[40%] top-[30%] bg-gradient-to-r from-primary-200/5 via-accent-200/8 to-secondary-200/5 blur-[120px] animate-flow-x"
+            style={{ animationDuration: "40s" }}
+          ></div>
+
           {/* Overlay with subtle texture */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift" style={{ animationDuration: '50s' }}></div>
-          
+          <div
+            className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift"
+            style={{ animationDuration: "50s" }}
+          ></div>
+
           {/* Delicate animated border lines */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x" style={{ backgroundSize: '200% 100%' }}></div>
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/10 to-transparent animate-flow-x-reverse" style={{ backgroundSize: '200% 100%' }}></div>
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
+          <div
+            className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/10 to-transparent animate-flow-x-reverse"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
         </div>
 
-        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 py-16">
+        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 pt-24 pb-16">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block mb-2 px-3 py-1 bg-accent-50 border border-accent-100 rounded-full">
-              <span className="text-sm text-accent-600 font-medium">Investment Opportunities</span>
+              <span className="text-sm text-accent-600 font-medium">
+                Investment Opportunities
+              </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight relative">
               <span className="text-neutral-900">For </span>
               <span className="bg-gradient-to-r from-accent-600 via-primary-500 to-secondary-600 bg-clip-text text-transparent animate-color-shift relative">
                 Investors
-                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-accent-400 via-primary-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left" 
-                      style={{ animation: 'scale-x 1.5s ease-out forwards', animationDelay: '0.5s' }}></span>
+                <span
+                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-accent-400 via-primary-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left"
+                  style={{
+                    animation: "scale-x 1.5s ease-out forwards",
+                    animationDelay: "0.5s",
+                  }}
+                ></span>
               </span>
             </h1>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl mx-auto">
@@ -131,22 +159,31 @@ const Investors = () => {
             </p>
             <div className="flex justify-center space-x-3">
               <div className="h-2 w-2 rounded-full bg-gradient-to-br from-accent-400 to-accent-500 animate-bounce"></div>
-              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 animate-bounce"
+                style={{ animationDelay: "0.2s" }}
+              ></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce"
+                style={{ animationDelay: "0.4s" }}
+              ></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Funding Model Section */}
-      <section
-        ref={sectionRef}
-        className="py-20 bg-white relative"
-      >
+      <section ref={sectionRef} className="py-20 bg-white relative">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -right-10 top-10 w-40 h-40 rounded-full bg-gradient-to-br from-primary-200/30 to-primary-300/20 blur-3xl animate-drift" style={{ animationDuration: '25s' }}></div>
-          <div className="absolute left-10 bottom-10 w-40 h-40 rounded-full bg-gradient-to-br from-accent-200/30 to-accent-300/20 blur-3xl animate-float" style={{ animationDuration: '28s' }}></div>
+          <div
+            className="absolute -right-10 top-10 w-40 h-40 rounded-full bg-gradient-to-br from-primary-200/30 to-primary-300/20 blur-3xl animate-drift"
+            style={{ animationDuration: "25s" }}
+          ></div>
+          <div
+            className="absolute left-10 bottom-10 w-40 h-40 rounded-full bg-gradient-to-br from-accent-200/30 to-accent-300/20 blur-3xl animate-float"
+            style={{ animationDuration: "28s" }}
+          ></div>
           <div className="absolute right-1/3 bottom-1/3 w-20 h-20 rounded-full bg-gradient-to-br from-secondary-200/20 to-secondary-300/10 blur-2xl animate-pulse-slow"></div>
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
         </div>
@@ -154,9 +191,13 @@ const Investors = () => {
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 relative">
             <div className="inline-block mb-2 px-3 py-1 bg-primary-50 border border-primary-100 rounded-full">
-              <span className="text-sm text-primary-600 font-medium">Our Financial Framework</span>
+              <span className="text-sm text-primary-600 font-medium">
+                Our Financial Framework
+              </span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">Current Funding Model</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">
+              Current Funding Model
+            </h2>
             <div className="h-0.5 w-20 bg-gradient-to-r from-primary-400 to-secondary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               Our approach to sustainable growth and product development
@@ -274,9 +315,7 @@ const Investors = () => {
                       <div className="absolute left-0 top-1 h-6 w-6 rounded-full bg-gradient-to-br from-accent-400 to-accent-500 flex items-center justify-center shadow-sm">
                         <span className="text-white text-xs">2</span>
                       </div>
-                      <h4 className="font-semibold text-accent-600">
-                        Phase 2
-                      </h4>
+                      <h4 className="font-semibold text-accent-600">Phase 2</h4>
                       <p className="text-neutral-700">
                         Omadeas SalesOps Launch & Integration
                       </p>
@@ -305,18 +344,31 @@ const Investors = () => {
       <section className="py-20 bg-neutral-50 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-[5%] left-[45%] w-[40%] h-[30%] rounded-full bg-gradient-to-br from-accent-200/10 to-accent-300/5 blur-[100px] animate-float animate-drift" style={{ animationDuration: '30s' }}></div>
-          <div className="absolute bottom-[20%] right-[35%] w-[25%] h-[25%] rounded-full bg-gradient-to-tl from-primary-200/8 to-primary-300/4 blur-[90px] animate-float" style={{ animationDuration: '22s', animationDelay: '2s' }}></div>
-          <div className="absolute left-[15%] top-[40%] w-[20%] h-[25%] rounded-full bg-gradient-to-tr from-secondary-200/6 to-secondary-300/3 blur-[80px] animate-pulse-slower" style={{ animationDuration: '15s' }}></div>
+          <div
+            className="absolute top-[5%] left-[45%] w-[40%] h-[30%] rounded-full bg-gradient-to-br from-accent-200/10 to-accent-300/5 blur-[100px] animate-float animate-drift"
+            style={{ animationDuration: "30s" }}
+          ></div>
+          <div
+            className="absolute bottom-[20%] right-[35%] w-[25%] h-[25%] rounded-full bg-gradient-to-tl from-primary-200/8 to-primary-300/4 blur-[90px] animate-float"
+            style={{ animationDuration: "22s", animationDelay: "2s" }}
+          ></div>
+          <div
+            className="absolute left-[15%] top-[40%] w-[20%] h-[25%] rounded-full bg-gradient-to-tr from-secondary-200/6 to-secondary-300/3 blur-[80px] animate-pulse-slower"
+            style={{ animationDuration: "15s" }}
+          ></div>
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]"></div>
         </div>
 
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 relative">
             <div className="inline-block mb-2 px-3 py-1 bg-secondary-50 border border-secondary-100 rounded-full">
-              <span className="text-sm text-secondary-600 font-medium">Growth Potential</span>
+              <span className="text-sm text-secondary-600 font-medium">
+                Growth Potential
+              </span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">Investment Opportunities</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">
+              Investment Opportunities
+            </h2>
             <div className="h-0.5 w-20 bg-gradient-to-r from-primary-400 to-secondary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               We are seeking strategic investment partners to accelerate our
@@ -478,9 +530,13 @@ const Investors = () => {
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 relative">
             <div className="inline-block mb-2 px-3 py-1 bg-primary-50 border border-primary-100 rounded-full">
-              <span className="text-sm text-primary-600 font-medium">Our Values</span>
+              <span className="text-sm text-primary-600 font-medium">
+                Our Values
+              </span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">Operational Principles</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">
+              Operational Principles
+            </h2>
             <div className="h-0.5 w-20 bg-gradient-to-r from-primary-400 to-secondary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               While we believe in strong business and cash growth, we are keen
@@ -500,9 +556,7 @@ const Investors = () => {
                 <h3 className="text-xl font-bold mb-4 text-neutral-900 group-hover:text-primary-600 transition-colors duration-300">
                   {principle.title}
                 </h3>
-                <p className="text-neutral-600">
-                  {principle.description}
-                </p>
+                <p className="text-neutral-600">{principle.description}</p>
               </div>
             ))}
           </div>
@@ -513,8 +567,14 @@ const Investors = () => {
       <section className="py-16 bg-gradient-to-br from-neutral-50 to-primary-50/30 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-[10%] right-[30%] w-[35%] h-[20%] rounded-full bg-gradient-to-br from-primary-200/10 to-primary-300/5 blur-[100px] animate-drift" style={{ animationDuration: '40s' }}></div>
-          <div className="absolute bottom-[20%] left-[25%] w-[25%] h-[20%] rounded-full bg-gradient-to-tl from-accent-200/10 to-accent-300/5 blur-[80px] animate-float" style={{ animationDuration: '35s' }}></div>
+          <div
+            className="absolute top-[10%] right-[30%] w-[35%] h-[20%] rounded-full bg-gradient-to-br from-primary-200/10 to-primary-300/5 blur-[100px] animate-drift"
+            style={{ animationDuration: "40s" }}
+          ></div>
+          <div
+            className="absolute bottom-[20%] left-[25%] w-[25%] h-[20%] rounded-full bg-gradient-to-tl from-accent-200/10 to-accent-300/5 blur-[80px] animate-float"
+            style={{ animationDuration: "35s" }}
+          ></div>
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.01]"></div>
         </div>
 
@@ -522,7 +582,7 @@ const Investors = () => {
           <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-8 md:p-12 border border-neutral-100 relative group overflow-hidden">
             {/* Subtle glow effect on hover */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary-100/0 via-primary-200/0 to-accent-200/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-            
+
             {/* Animated decorative corner accents */}
             <div className="absolute top-0 left-0 w-16 h-16 overflow-hidden">
               <div className="absolute top-0 left-0 w-6 h-1 bg-gradient-to-r from-primary-300 to-primary-500"></div>
@@ -540,7 +600,7 @@ const Investors = () => {
               <div className="absolute bottom-0 right-0 w-6 h-1 bg-gradient-to-r from-accent-500 to-accent-300"></div>
               <div className="absolute bottom-0 right-0 w-1 h-6 bg-gradient-to-b from-accent-500 to-accent-300"></div>
             </div>
-            
+
             {/* Content */}
             <div className="text-center mb-8 relative">
               <h2 className="text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent">
@@ -555,14 +615,14 @@ const Investors = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link 
-                to="/contact" 
+              <Link
+                to="/contact"
                 className="text-center px-6 py-3 rounded-lg bg-gradient-to-r from-primary-500 to-accent-500 text-white font-medium hover:from-primary-600 hover:to-accent-600 transition-all duration-300 hover:shadow-md hover:shadow-primary-500/20"
               >
                 Get in Touch
               </Link>
-              <Link 
-                to="/products" 
+              <Link
+                to="/products"
                 className="text-center px-6 py-3 rounded-lg border border-neutral-200 hover:border-primary-300 text-neutral-700 font-medium hover:bg-primary-50/50 transition-all duration-300"
               >
                 Learn About Our Products

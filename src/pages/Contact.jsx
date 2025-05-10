@@ -97,7 +97,7 @@ const Contact = () => {
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/10 to-transparent animate-flow-x-reverse" style={{ backgroundSize: '200% 100%' }}></div>
         </div>
 
-        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 py-16">
+        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 pt-24 pb-16">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-block mb-2 px-3 py-1 bg-primary-50 border border-primary-100 rounded-full">
               <span className="text-sm text-primary-600 font-medium">Get In Touch</span>

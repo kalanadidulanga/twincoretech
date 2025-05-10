@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-sm"
           : "bg-transparent"
@@ -74,13 +74,9 @@ const Header = () => {
             </Link>
             <Link
               to="/contact"
-              className="relative overflow-hidden group rounded-md"
+              className="bg-tertiary-700 hover:bg-tertiary-800 text-white font-medium px-5 py-2 rounded-md transition-colors duration-300"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 group-hover:from-primary-600 group-hover:to-accent-600 transition-all duration-300"></span>
-              <span className="relative block text-white font-medium px-5 py-2 z-10">
-                Contact Us
-              </span>
-              <span className="absolute -inset-[100%] bg-gradient-to-r from-primary-400/20 to-accent-400/20 blur-xl transform rotate-45 translate-x-full group-hover:translate-x-0 transition-transform duration-700"></span>
+              Contact Us
             </Link>
           </nav>
 
@@ -167,13 +163,10 @@ const Header = () => {
               </Link>
               <Link
                 to="/contact"
-                className="relative overflow-hidden group rounded-md mt-2"
+                className="bg-tertiary-700 hover:bg-tertiary-800 text-white font-medium px-4 py-2 rounded-md transition-colors duration-300 mt-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500"></span>
-                <span className="relative block text-white font-medium px-4 py-2 z-10">
-                  Contact Us
-                </span>
+                Contact Us
               </Link>
             </div>
           </div>

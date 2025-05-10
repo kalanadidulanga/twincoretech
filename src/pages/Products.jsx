@@ -187,50 +187,88 @@ const Products = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative min-h-[60vh] flex items-center overflow-hidden bg-neutral-50">
+      <section
+        ref={heroRef}
+        className="relative min-h-[60vh] flex items-center overflow-hidden bg-neutral-50"
+      >
         {/* Enhanced background elements with beautiful blurry animation */}
         <div className="absolute inset-0 overflow-hidden animate-color-shift">
           {/* Large primary color cloud with subtle drift */}
-          <div className="absolute right-[20%] top-[10%] w-[50%] h-[40%] rounded-full bg-gradient-to-br from-primary-300/10 to-secondary-400/5 blur-[120px] animate-drift" style={{ animationDuration: '35s' }}></div>
-          
+          <div
+            className="absolute right-[20%] top-[10%] w-[50%] h-[40%] rounded-full bg-gradient-to-br from-primary-300/10 to-secondary-400/5 blur-[120px] animate-drift"
+            style={{ animationDuration: "35s" }}
+          ></div>
+
           {/* Accent color cloud that gently pulses */}
-          <div className="absolute left-[30%] bottom-[20%] w-[40%] h-[30%] rounded-full bg-gradient-to-tr from-accent-300/8 to-tertiary-300/4 blur-[100px] animate-pulse-slow" style={{ animationDuration: '25s', animationDelay: '3s' }}></div>
-          
+          <div
+            className="absolute left-[30%] bottom-[20%] w-[40%] h-[30%] rounded-full bg-gradient-to-tr from-accent-300/8 to-tertiary-300/4 blur-[100px] animate-pulse-slow"
+            style={{ animationDuration: "25s", animationDelay: "3s" }}
+          ></div>
+
           {/* Smaller floating element with vertical movement */}
-          <div className="absolute left-[15%] top-[25%] w-[25%] h-[20%] rounded-full bg-gradient-to-bl from-secondary-300/7 to-primary-400/3 blur-[90px] animate-float" style={{ animationDuration: '28s', animationDelay: '5s' }}></div>
-          
+          <div
+            className="absolute left-[15%] top-[25%] w-[25%] h-[20%] rounded-full bg-gradient-to-bl from-secondary-300/7 to-primary-400/3 blur-[90px] animate-float"
+            style={{ animationDuration: "28s", animationDelay: "5s" }}
+          ></div>
+
           {/* Horizontal light beam with slow color shift */}
-          <div className="absolute inset-y-0 w-full h-[45%] top-[25%] bg-gradient-to-r from-secondary-200/3 via-accent-300/7 to-primary-200/3 blur-[130px] animate-flow-x" style={{ animationDuration: '45s' }}></div>
-          
+          <div
+            className="absolute inset-y-0 w-full h-[45%] top-[25%] bg-gradient-to-r from-secondary-200/3 via-accent-300/7 to-primary-200/3 blur-[130px] animate-flow-x"
+            style={{ animationDuration: "45s" }}
+          ></div>
+
           {/* Ultra-fine grid pattern for depth */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift" style={{ animationDuration: '60s' }}></div>
-          
+          <div
+            className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift"
+            style={{ animationDuration: "60s" }}
+          ></div>
+
           {/* Delicate animated border lines */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary-300/10 to-transparent animate-flow-x" style={{ backgroundSize: '200% 100%' }}></div>
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x-reverse" style={{ backgroundSize: '200% 100%' }}></div>
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary-300/10 to-transparent animate-flow-x"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
+          <div
+            className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x-reverse"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
         </div>
-        
-        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
+
+        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 pt-24 pb-16">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-block mb-2 px-3 py-1 bg-primary-50 border border-primary-100 rounded-full">
-              <span className="text-sm text-primary-600 font-medium">Omadeas Product Suite</span>
+              <span className="text-sm text-primary-600 font-medium">
+                Omadeas Product Suite
+              </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight relative">
               <span className="text-neutral-900">Our </span>
               <span className="bg-gradient-to-r from-primary-600 via-accent-500 to-secondary-600 bg-clip-text text-transparent animate-color-shift relative">
                 Products
-                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 via-accent-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left" 
-                      style={{ animation: 'scale-x 1.5s ease-out forwards', animationDelay: '0.5s' }}></span>
+                <span
+                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 via-accent-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left"
+                  style={{
+                    animation: "scale-x 1.5s ease-out forwards",
+                    animationDelay: "0.5s",
+                  }}
+                ></span>
               </span>
             </h1>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Solutions born from real-world experience delivering complex digital transformation 
-              programmes across financial services, insurance, and pensions sectors.
+              Solutions born from real-world experience delivering complex
+              digital transformation programmes across financial services,
+              insurance, and pensions sectors.
             </p>
             <div className="flex justify-center space-x-3">
               <div className="h-2 w-2 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 animate-bounce"></div>
-              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-accent-400 to-accent-500 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-accent-400 to-accent-500 animate-bounce"
+                style={{ animationDelay: "0.2s" }}
+              ></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce"
+                style={{ animationDelay: "0.4s" }}
+              ></div>
             </div>
           </div>
         </div>
@@ -241,24 +279,25 @@ const Products = () => {
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
           <div className="mb-16 relative">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-primary-400 to-accent-400 rounded-full"></div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent inline-block">Core Product Suite</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent inline-block">
+              Core Product Suite
+            </h2>
             <div className="h-0.5 w-24 bg-gradient-to-r from-primary-500 to-accent-400 mb-6 transform transition-all duration-700 hover:w-32"></div>
             <p className="text-lg text-neutral-700">
-              Our flagship products designed to streamline and enhance digital transformation processes.
+              Our flagship products designed to streamline and enhance digital
+              transformation processes.
             </p>
             <div className="absolute -z-10 w-24 h-24 bg-primary-50 rounded-full blur-2xl opacity-30 -bottom-10 -right-10"></div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {mainProducts.map((product) => (
-              <div 
-                key={product.id} 
+              <div
+                key={product.id}
                 className="bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 hover:shadow-lg transition-all duration-300 overflow-hidden group"
               >
                 <div className={`p-6 bg-gradient-to-r ${product.primaryColor}`}>
-                  <div className="mb-5 text-white">
-                    {product.icon}
-                  </div>
+                  <div className="mb-5 text-white">{product.icon}</div>
                   <h3 className="text-xl font-semibold mb-2 text-white">
                     {product.name}
                   </h3>
@@ -269,12 +308,10 @@ const Products = () => {
                     {product.status}
                   </span>
                 </div>
-                
+
                 <div className="p-6">
-                  <p className="text-neutral-600 mb-6">
-                    {product.description}
-                  </p>
-                  
+                  <p className="text-neutral-600 mb-6">{product.description}</p>
+
                   <div>
                     <div className="text-sm uppercase text-neutral-500 mb-3 font-medium">
                       Key Features
@@ -282,8 +319,16 @@ const Products = () => {
                     <ul className="space-y-2">
                       {product.features.map((feature, index) => (
                         <li key={index} className="flex items-start">
-                          <svg className="h-5 w-5 mr-2 text-primary-600 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          <svg
+                            className="h-5 w-5 mr-2 text-primary-600 flex-shrink-0 mt-0.5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                           <span className="text-neutral-700">{feature}</span>
                         </li>
@@ -303,19 +348,24 @@ const Products = () => {
           <div className="mb-16 relative">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-secondary-400 to-primary-400 rounded-full"></div>
             <div className="inline-block mb-2 px-3 py-1 bg-secondary-50 border border-secondary-100 rounded-full">
-              <span className="text-sm text-secondary-600 font-medium">Product Roadmap</span>
+              <span className="text-sm text-secondary-600 font-medium">
+                Product Roadmap
+              </span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-secondary-600 via-accent-500 to-primary-500 bg-clip-text text-transparent inline-block">Future Innovations</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-secondary-600 via-accent-500 to-primary-500 bg-clip-text text-transparent inline-block">
+              Future Innovations
+            </h2>
             <div className="h-0.5 w-24 bg-gradient-to-r from-secondary-500 to-primary-400 mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700">
-              Our product roadmap includes these upcoming solutions to further enhance digital transformation capabilities.
+              Our product roadmap includes these upcoming solutions to further
+              enhance digital transformation capabilities.
             </p>
             <div className="absolute -z-10 w-28 h-28 bg-secondary-50 rounded-full blur-2xl opacity-30 -bottom-10 -right-10"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {futureProducts.map((product) => (
-              <div 
+              <div
                 key={product.id}
                 className="bg-white rounded-lg border border-neutral-200 p-6 hover:shadow-lg transition-all duration-300 group relative overflow-hidden"
               >
@@ -328,9 +378,7 @@ const Products = () => {
                 <h3 className="text-xl font-semibold mb-3 text-neutral-900 group-hover:text-primary-600 transition-colors duration-300">
                   {product.name}
                 </h3>
-                <p className="text-neutral-600">
-                  {product.description}
-                </p>
+                <p className="text-neutral-600">{product.description}</p>
                 <div className="absolute -bottom-16 -right-16 w-32 h-32 bg-secondary-50 rounded-full blur-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
               </div>
             ))}

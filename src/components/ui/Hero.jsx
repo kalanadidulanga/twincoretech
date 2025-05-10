@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift" style={{ animationDuration: '70s' }}></div>
       </div>
       
-      <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
+      <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 pt-32 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side content */}
           <div className="text-left">
@@ -68,7 +68,7 @@ const Hero = () => {
               {/* Logo */}
               <div className="relative z-10 transform hover:translate-y-[-5px] transition-transform duration-500">
                 <img 
-                  src="/TwinCoreTechLogo.svg" 
+                  src="/TwinCoreTechLogo.png" 
                   alt="TwinCoreTech Logo" 
                   className="w-full max-w-md" 
                 />

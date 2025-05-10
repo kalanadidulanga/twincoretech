@@ -150,36 +150,64 @@ const Team = () => {
         {/* Enhanced background elements with beautiful blurry animation */}
         <div className="absolute inset-0 overflow-hidden animate-color-shift">
           {/* Large ethereal orb with subtle color shifting */}
-          <div className="absolute top-[20%] left-[45%] w-[40%] h-[40%] rounded-full bg-gradient-to-br from-primary-400/10 to-accent-300/5 blur-[100px] animate-float animate-drift" style={{ animationDuration: '30s' }}></div>
-          
+          <div
+            className="absolute top-[20%] left-[45%] w-[40%] h-[40%] rounded-full bg-gradient-to-br from-primary-400/10 to-accent-300/5 blur-[100px] animate-float animate-drift"
+            style={{ animationDuration: "30s" }}
+          ></div>
+
           {/* Secondary floating element with soft edges */}
-          <div className="absolute bottom-[30%] right-[35%] w-[25%] h-[35%] rounded-full bg-gradient-to-tl from-secondary-400/8 to-tertiary-300/4 blur-[90px] animate-float" style={{ animationDuration: '22s', animationDelay: '2s' }}></div>
-          
+          <div
+            className="absolute bottom-[30%] right-[35%] w-[25%] h-[35%] rounded-full bg-gradient-to-tl from-secondary-400/8 to-tertiary-300/4 blur-[90px] animate-float"
+            style={{ animationDuration: "22s", animationDelay: "2s" }}
+          ></div>
+
           {/* Accent bubble with gentle pulsation */}
-          <div className="absolute left-[15%] top-[40%] w-[20%] h-[25%] rounded-full bg-gradient-to-tr from-accent-300/6 to-primary-300/3 blur-[80px] animate-pulse-slower" style={{ animationDuration: '15s' }}></div>
-          
+          <div
+            className="absolute left-[15%] top-[40%] w-[20%] h-[25%] rounded-full bg-gradient-to-tr from-accent-300/6 to-primary-300/3 blur-[80px] animate-pulse-slower"
+            style={{ animationDuration: "15s" }}
+          ></div>
+
           {/* Ethereal light beam that flows across the screen */}
-          <div className="absolute inset-y-0 w-full h-[40%] top-[30%] bg-gradient-to-r from-primary-200/5 via-accent-200/8 to-secondary-200/5 blur-[120px] animate-flow-x" style={{ animationDuration: '40s' }}></div>
-          
+          <div
+            className="absolute inset-y-0 w-full h-[40%] top-[30%] bg-gradient-to-r from-primary-200/5 via-accent-200/8 to-secondary-200/5 blur-[120px] animate-flow-x"
+            style={{ animationDuration: "40s" }}
+          ></div>
+
           {/* Overlay with subtle texture */}
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift" style={{ animationDuration: '50s' }}></div>
-          
+          <div
+            className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift"
+            style={{ animationDuration: "50s" }}
+          ></div>
+
           {/* Delicate animated border lines */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x" style={{ backgroundSize: '200% 100%' }}></div>
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/10 to-transparent animate-flow-x-reverse" style={{ backgroundSize: '200% 100%' }}></div>
+          <div
+            className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-300/10 to-transparent animate-flow-x"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
+          <div
+            className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-300/10 to-transparent animate-flow-x-reverse"
+            style={{ backgroundSize: "200% 100%" }}
+          ></div>
         </div>
 
-        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
+        <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10 pt-24 pb-16">
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-block mb-2 px-3 py-1 bg-tertiary-50 border border-tertiary-100 rounded-full">
-              <span className="text-sm text-tertiary-600 font-medium">Meet Our Experts</span>
+              <span className="text-sm text-tertiary-600 font-medium">
+                Meet Our Experts
+              </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight relative">
               <span className="text-neutral-900">Our </span>
               <span className="bg-gradient-to-r from-tertiary-600 via-primary-500 to-secondary-600 bg-clip-text text-transparent animate-color-shift relative">
                 Team
-                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-tertiary-400 via-primary-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left" 
-                      style={{ animation: 'scale-x 1.5s ease-out forwards', animationDelay: '0.5s' }}></span>
+                <span
+                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-tertiary-400 via-primary-400 to-secondary-400 rounded-full transform scale-x-0 transition-transform duration-700 ease-out origin-left"
+                  style={{
+                    animation: "scale-x 1.5s ease-out forwards",
+                    animationDelay: "0.5s",
+                  }}
+                ></span>
               </span>
             </h1>
             <p className="text-lg text-neutral-700 mb-8 leading-relaxed max-w-2xl mx-auto">
@@ -189,8 +217,14 @@ const Team = () => {
             </p>
             <div className="flex justify-center space-x-3">
               <div className="h-2 w-2 rounded-full bg-gradient-to-br from-tertiary-400 to-tertiary-500 animate-bounce"></div>
-              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-              <div className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 animate-bounce"
+                style={{ animationDelay: "0.2s" }}
+              ></div>
+              <div
+                className="h-2 w-2 rounded-full bg-gradient-to-br from-secondary-400 to-secondary-500 animate-bounce"
+                style={{ animationDelay: "0.4s" }}
+              ></div>
             </div>
           </div>
         </div>
@@ -200,13 +234,17 @@ const Team = () => {
       <section className="py-20 bg-white relative">
         <div className="absolute -z-10 w-36 h-36 bg-accent-50 rounded-full blur-3xl opacity-30 top-10 -right-10"></div>
         <div className="absolute -z-10 w-44 h-44 bg-primary-50 rounded-full blur-3xl opacity-30 bottom-10 -left-10"></div>
-        
+
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 relative">
             <div className="inline-block mb-2 px-3 py-1 bg-primary-50 border border-primary-100 rounded-full">
-              <span className="text-sm text-primary-600 font-medium">Our Core Values</span>
+              <span className="text-sm text-primary-600 font-medium">
+                Our Core Values
+              </span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-tertiary-500 to-accent-500 bg-clip-text text-transparent">Our Values and Expertise</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-tertiary-500 to-accent-500 bg-clip-text text-transparent">
+              Our Values and Expertise
+            </h2>
             <div className="h-0.5 w-20 bg-gradient-to-r from-primary-400 to-tertiary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               Our team brings together decades of combined experience in digital
@@ -307,19 +345,18 @@ const Team = () => {
       </section>
 
       {/* Team Members Section */}
-      <section
-        ref={sectionRef}
-        className="py-20 bg-neutral-50 relative"
-      >
+      <section ref={sectionRef} className="py-20 bg-neutral-50 relative">
         <div className="absolute -z-10 w-32 h-32 bg-primary-50 rounded-full blur-3xl opacity-30 top-20 -left-10"></div>
         <div className="absolute -z-10 w-40 h-40 bg-accent-50 rounded-full blur-3xl opacity-30 bottom-20 -right-10"></div>
-        
+
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 relative">
             <div className="inline-block mb-2 px-3 py-1 bg-secondary-50 border border-secondary-100 rounded-full">
-              <span className="text-sm text-secondary-600 font-medium">Our People</span>
+              <span className="text-sm text-secondary-600 font-medium">
+                Our People
+              </span>
             </div>
-            <h2 
+            <h2
               ref={headingRef}
               className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-primary-600 via-secondary-500 to-tertiary-600 bg-clip-text text-transparent"
             >
@@ -396,9 +433,9 @@ const Team = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="mb-1 text-xs font-medium text-neutral-500">
-                    {member.category === 'leadership' && 'Leadership Team'}
-                    {member.category === 'technology' && 'Technology Team'}
-                    {member.category === 'advisors' && 'Advisory Board'}
+                    {member.category === "leadership" && "Leadership Team"}
+                    {member.category === "technology" && "Technology Team"}
+                    {member.category === "advisors" && "Advisory Board"}
                   </div>
                   <h3 className="text-lg font-semibold text-neutral-900 mb-1">
                     {member.name}
@@ -406,9 +443,7 @@ const Team = () => {
                   <p className="text-accent-600 font-medium text-sm mb-3">
                     {member.role}
                   </p>
-                  <p className="text-neutral-600 text-sm mb-4">
-                    {member.bio}
-                  </p>
+                  <p className="text-neutral-600 text-sm mb-4">{member.bio}</p>
 
                   {/* Expertise tags with refined styling */}
                   <div className="flex flex-wrap gap-1 mb-4">
@@ -450,13 +485,17 @@ const Team = () => {
       <section className="py-20 bg-white relative">
         <div className="absolute -z-10 w-36 h-36 bg-tertiary-50 rounded-full blur-3xl opacity-30 top-10 -right-10"></div>
         <div className="absolute -z-10 w-44 h-44 bg-secondary-50 rounded-full blur-3xl opacity-30 bottom-10 -left-10"></div>
-        
+
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8">
           <div className="text-center mb-16 relative">
             <div className="inline-block mb-2 px-3 py-1 bg-accent-50 border border-accent-100 rounded-full">
-              <span className="text-sm text-accent-600 font-medium">Strategic Alliances</span>
+              <span className="text-sm text-accent-600 font-medium">
+                Strategic Alliances
+              </span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-accent-600 via-primary-500 to-tertiary-600 bg-clip-text text-transparent">Our Partners</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-accent-600 via-primary-500 to-tertiary-600 bg-clip-text text-transparent">
+              Our Partners
+            </h2>
             <div className="h-0.5 w-20 bg-gradient-to-r from-accent-400 to-tertiary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
             <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
               We collaborate with leading companies to enhance our capabilities
@@ -494,9 +533,18 @@ const Team = () => {
       <section className="py-20 bg-neutral-50 relative overflow-hidden">
         {/* Background elements */}
         <div className="absolute inset-0 overflow-hidden animate-color-shift">
-          <div className="absolute top-[10%] right-[10%] w-[40%] h-[40%] rounded-full bg-gradient-to-br from-primary-400/8 to-accent-300/4 blur-[120px] animate-pulse-slow" style={{ animationDuration: '25s' }}></div>
-          <div className="absolute bottom-[20%] left-[20%] w-[30%] h-[30%] rounded-full bg-gradient-to-tr from-tertiary-300/6 to-secondary-300/3 blur-[100px] animate-float" style={{ animationDuration: '32s' }}></div>
-          <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift" style={{ animationDuration: '60s' }}></div>
+          <div
+            className="absolute top-[10%] right-[10%] w-[40%] h-[40%] rounded-full bg-gradient-to-br from-primary-400/8 to-accent-300/4 blur-[120px] animate-pulse-slow"
+            style={{ animationDuration: "25s" }}
+          ></div>
+          <div
+            className="absolute bottom-[20%] left-[20%] w-[30%] h-[30%] rounded-full bg-gradient-to-tr from-tertiary-300/6 to-secondary-300/3 blur-[100px] animate-float"
+            style={{ animationDuration: "32s" }}
+          ></div>
+          <div
+            className="absolute inset-0 bg-grid-pattern opacity-[0.03] animate-subtle-shift"
+            style={{ animationDuration: "60s" }}
+          ></div>
         </div>
 
         <div className="container max-w-[var(--container-max)] mx-auto px-6 lg:px-8 relative z-10">
@@ -504,13 +552,18 @@ const Team = () => {
             <div className="bg-white rounded-xl border border-neutral-200 p-8 md:p-12 shadow-sm">
               <div className="text-center mb-8">
                 <div className="inline-block mb-2 px-3 py-1 bg-secondary-50 border border-secondary-100 rounded-full">
-                  <span className="text-sm text-secondary-600 font-medium">Career Opportunities</span>
+                  <span className="text-sm text-secondary-600 font-medium">
+                    Career Opportunities
+                  </span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-secondary-600 via-primary-500 to-tertiary-600 bg-clip-text text-transparent">Join Our Team</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-5 bg-gradient-to-r from-secondary-600 via-primary-500 to-tertiary-600 bg-clip-text text-transparent">
+                  Join Our Team
+                </h2>
                 <div className="h-0.5 w-20 bg-gradient-to-r from-secondary-400 to-primary-400 mx-auto mb-6 transform transition-all duration-700 animate-pulse-slow"></div>
                 <p className="text-lg text-neutral-700 mb-8">
-                  We're always looking for talented individuals who are passionate
-                  about digital transformation and innovative technology solutions.
+                  We're always looking for talented individuals who are
+                  passionate about digital transformation and innovative
+                  technology solutions.
                 </p>
                 <div className="mt-8">
                   <Link
@@ -521,37 +574,68 @@ const Team = () => {
                   </Link>
                 </div>
               </div>
-              
+
               {/* Value propositions */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-center md:text-left">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-3">
                   <div className="bg-primary-100 p-2 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905a3.61 3.61 0 01-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-primary-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905a3.61 3.61 0 01-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900">Growth Opportunities</h3>
-                    <p className="text-sm text-neutral-600">Continuous learning and clear paths for career advancement</p>
+                    <h3 className="font-semibold text-neutral-900">
+                      Growth Opportunities
+                    </h3>
+                    <p className="text-sm text-neutral-600">
+                      Continuous learning and clear paths for career advancement
+                    </p>
                   </div>
                 </div>
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-3">
                   <div className="bg-accent-100 p-2 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 text-accent-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900">Work-Life Balance</h3>
-                    <p className="text-sm text-neutral-600">Flexible scheduling and remote work options</p>
+                    <h3 className="font-semibold text-neutral-900">
+                      Work-Life Balance
+                    </h3>
+                    <p className="text-sm text-neutral-600">
+                      Flexible scheduling and remote work options
+                    </p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="text-center mt-8 text-neutral-600 text-sm">
                 <p>TwinCoreTech is an equal opportunities employer.</p>
                 <p>
-                  We are committed to diversity, equity, and inclusion in our hiring practices.
+                  We are committed to diversity, equity, and inclusion in our
+                  hiring practices.
                 </p>
               </div>
             </div>
